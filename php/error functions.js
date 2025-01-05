@@ -1,5 +1,3 @@
-
-
 const errorFunctions = [
     //? ------------------ debug_backtrace()
     snip(`debug_backtrace($\{start});$\{}`, {

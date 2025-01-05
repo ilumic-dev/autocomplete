@@ -1,5 +1,3 @@
-
-
 const mailFunctions = [
     snip(`mail($\{});$\{}`, {
         label: "mail()",

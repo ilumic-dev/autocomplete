@@ -1,5 +1,3 @@
-
-
 const stringFunctions = [
     //? ------------------ addcslashes()
     snip(`addcslashes($\{string}, $\{characters});$\{}`, {

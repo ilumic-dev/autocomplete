@@ -1,5 +1,3 @@
-
-
 const miscFunctions = [
     //? ------------------ connection_aborted()
     snip(`connection_aborted();$\{}`, {

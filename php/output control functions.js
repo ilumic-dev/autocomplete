@@ -1,5 +1,3 @@
-
-
 const outputControlFunctions = [
     snip(`flush();$\{}`, {
         label: "flush()",

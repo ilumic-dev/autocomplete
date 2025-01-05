@@ -1,5 +1,3 @@
-
-
 const calendarFunctions = [
     //? ------------------ cal_days_in_month()
     snip(`cal_days_in_month($\{calendar}, $\{month}, $\{year});$\{}`, {

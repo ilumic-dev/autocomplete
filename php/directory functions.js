@@ -1,5 +1,3 @@
-
-
 const directoryFunctions = [
     //? ------------------ chdir()
     snip(`chdir($\{directory});$\{}`, {

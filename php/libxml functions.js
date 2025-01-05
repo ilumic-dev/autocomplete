@@ -1,5 +1,3 @@
-
-
 const libxmlFunctions = [
     snip(`libxml_clear_errors();$\{}`, {
         label: "libxml_clear_errors()",

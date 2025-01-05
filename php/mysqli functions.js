@@ -1,5 +1,3 @@
-
-
 const mysqliFunctions = [
     snip(`mysqli_affected_rows($\{});$\{}`, {
         label: "mysqli_affected_rows()",

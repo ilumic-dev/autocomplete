@@ -1,5 +1,3 @@
-
-
 const filesystemFunctions = [
     //? ------------------ basename()
     snip(`basename($\{path});$\{}`, {

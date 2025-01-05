@@ -1,5 +1,3 @@
-
-
 const jsonFunctions = [
     snip(`json_encode($\{});$\{}`, {
         label: "json_encode()",

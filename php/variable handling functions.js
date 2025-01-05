@@ -1,5 +1,3 @@
-
-
 const variableHandlingFunctions = [
     snip(`boolval($\{mixed});$\{}`, {
         label: "boolval()",

@@ -1,5 +1,3 @@
-
-
 const networkFunctions = [
     snip(`checkdnsrr($\{});$\{}`, {
         label: "checkdnsrr()",

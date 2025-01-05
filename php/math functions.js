@@ -1,5 +1,3 @@
-
-
 const mathFunctions = [
     snip(`abs($\{});$\{}`, {
         label: "abs()",

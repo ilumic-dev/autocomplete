@@ -1,5 +1,3 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
-
 const zipFunctions = [
     snip(`zip_close($\{zip});$\{}`, {
         label: "zip_close()",

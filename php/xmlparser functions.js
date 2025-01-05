@@ -1,5 +1,3 @@
-
-
 const xmlParserFunctions = [
     snip(`utf8_decode($\{string});$\{}`, {
         label: "utf8_decode()",

@@ -1,5 +1,3 @@
-
-
 const exceptionFunctions = [
     //? ------------------ Exception()
     snip(`Exception($\{})$\{}`, {

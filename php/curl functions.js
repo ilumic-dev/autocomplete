@@ -1,5 +1,3 @@
-
-
 const curlFunctions = [
     snip(`curl_close($\{curl});$\{}`, {
         label: "curl_close()",

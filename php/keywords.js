@@ -1,5 +1,3 @@
-
-
 const keywords = [
     //? ------------------ echo
     snip(`echo "$\{}";$\{}`, {

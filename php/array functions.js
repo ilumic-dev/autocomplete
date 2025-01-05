@@ -1,5 +1,3 @@
-
-
 const arrayFunctions = [
 
     //! ------------------ each()

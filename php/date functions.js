@@ -1,5 +1,3 @@
-
-
 const dateFunctions = [
     //? ------------------ checkdate()
     snip(`checkdate($\{month}, $\{day}, $\{year});$\{}`, {

@@ -1,5 +1,3 @@
-
-
 const ftpFunctions = [
     snip(`ftp_alloc($\{});$\{}`, {
         label: "ftp_alloc()",
