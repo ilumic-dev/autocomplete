@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const libxmlFunctions = [
     snip(`libxml_clear_errors();$\{}`, {

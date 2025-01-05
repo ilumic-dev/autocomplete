@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const errorFunctions = [
     //? ------------------ debug_backtrace()

@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const jsonFunctions = [
     snip(`json_encode($\{});$\{}`, {

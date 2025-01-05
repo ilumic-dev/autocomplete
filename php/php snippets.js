@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const phpSnippets = [
     snip(`header('Content-Type: application/json; charset=utf-8');$\{}`, {

@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const xmlParserFunctions = [
     snip(`utf8_decode($\{string});$\{}`, {

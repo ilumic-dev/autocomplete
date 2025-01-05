@@ -1,4 +1,4 @@
-import {snippetCompletion as snip} from "@codemirror/autocomplete";
+
 
 const mysqliFunctions = [
     snip(`mysqli_affected_rows($\{});$\{}`, {
