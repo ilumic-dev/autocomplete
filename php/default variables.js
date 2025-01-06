@@ -1,4 +1,4 @@
-globalThis.defaultVariables = [
+window.phpIntellisense.defaultVariables = [
     {
         label: "_POST",
         info: "$_POST: <code>array</code>",

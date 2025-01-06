@@ -1,4 +1,4 @@
-globalThis.miscFunctions = [
+window.phpIntellisense.miscFunctions = [
     //? ------------------ connection_aborted()
     snip(`connection_aborted();$\{}`, {
         label: "connection_aborted()",

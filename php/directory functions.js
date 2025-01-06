@@ -1,4 +1,4 @@
-globalThis.directoryFunctions = [
+window.phpIntellisense.directoryFunctions = [
     //? ------------------ chdir()
     snip(`chdir($\{directory});$\{}`, {
         label: "chdir()",

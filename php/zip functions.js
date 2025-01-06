@@ -1,4 +1,4 @@
-globalThis.zipFunctions = [
+window.phpIntellisense.zipFunctions = [
     snip(`zip_close($\{zip});$\{}`, {
         label: "zip_close()",
         detail: "Zip",

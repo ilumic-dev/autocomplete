@@ -1,4 +1,4 @@
-globalThis.predefinedConstants = [
+window.phpIntellisense.predefinedConstants = [
     {
         label: "CAL_GREGORIAN",
         info: "CAL_GREGORIAN: <code>Integer</code>",

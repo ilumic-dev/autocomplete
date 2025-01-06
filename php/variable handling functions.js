@@ -1,4 +1,4 @@
-globalThis.variableHandlingFunctions = [
+window.phpIntellisense.variableHandlingFunctions = [
     snip(`boolval($\{mixed});$\{}`, {
         label: "boolval()",
         type: "method",

@@ -1,4 +1,4 @@
-globalThis.filterFunctions = [
+window.phpIntellisense.filterFunctions = [
     //? ------------------ filter_has_var()
     snip(`filter_has_var($\{input_type}, $\{variable_name});$\{}`, {
         label: "filter_has_var()",

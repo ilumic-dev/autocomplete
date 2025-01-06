@@ -1,4 +1,4 @@
-globalThis.curlFunctions = [
+window.phpIntellisense.curlFunctions = [
     snip(`curl_close($\{curl});$\{}`, {
         label: "curl_close()",
         detail: "Curl",

@@ -1,4 +1,4 @@
-globalThis.mathFunctions = [
+window.phpIntellisense.mathFunctions = [
     snip(`abs($\{});$\{}`, {
         label: "abs()",
         detail: "Math",

@@ -1,4 +1,4 @@
-globalThis.mysqliFunctions = [
+window.phpIntellisense.mysqliFunctions = [
     snip(`mysqli_affected_rows($\{});$\{}`, {
         label: "mysqli_affected_rows()",
         detail: "MySQLi",

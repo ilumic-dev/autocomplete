@@ -1,4 +1,4 @@
-globalThis.dateFunctions = [
+window.phpIntellisense.dateFunctions = [
     //? ------------------ checkdate()
     snip(`checkdate($\{month}, $\{day}, $\{year});$\{}`, {
         label: "checkdate()",

@@ -1,4 +1,4 @@
-globalThis.networkFunctions = [
+window.phpIntellisense.networkFunctions = [
     snip(`checkdnsrr($\{});$\{}`, {
         label: "checkdnsrr()",
         detail: "Network",

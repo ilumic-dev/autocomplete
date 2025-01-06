@@ -1,4 +1,4 @@
-globalThis.ftpFunctions = [
+window.phpIntellisense.ftpFunctions = [
     snip(`ftp_alloc($\{});$\{}`, {
         label: "ftp_alloc()",
         detail: "FTP",

@@ -1,4 +1,4 @@
-globalThis.arrayFunctions = [
+window.phpIntellisense.arrayFunctions = [
 
     //! ------------------ each()
     snip(`each($\{});$\{}`, {

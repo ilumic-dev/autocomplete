@@ -1,4 +1,4 @@
-globalThis.isCursorInPHP = function(code, cursorPosition) {
+window.phpIntellisense.isCursorInPHP = function(code, cursorPosition) {
         const line = cursorPosition.line;
         const column = cursorPosition.column;
 

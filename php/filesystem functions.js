@@ -1,4 +1,4 @@
-globalThis.filesystemFunctions = [
+window.phpIntellisense.filesystemFunctions = [
     //? ------------------ basename()
     snip(`basename($\{path});$\{}`, {
         label: "basename()",

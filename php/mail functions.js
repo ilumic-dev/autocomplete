@@ -1,4 +1,4 @@
-globalThis.mailFunctions = [
+window.phpIntellisense.mailFunctions = [
     snip(`mail($\{});$\{}`, {
         label: "mail()",
         detail: "Mail",

@@ -1,4 +1,4 @@
-globalThis.exceptionFunctions = [
+window.phpIntellisense.exceptionFunctions = [
     //? ------------------ Exception()
     snip(`Exception($\{})$\{}`, {
         label: "Exception()",
