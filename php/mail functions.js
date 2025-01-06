@@ -1,11 +1,11 @@
 window.phpIntellisense.mailFunctions = [
-    snip(`mail($\{});$\{}`, {
+    window.cmSnip(`mail($\{});$\{}`, {
         label: "mail()",
         detail: "Mail",
         type: "method",
         info: `The mail() function allows you to send emails directly from a script.`
     }),
-    snip(`ezmlm_hash($\{});$\{}`, {
+    window.cmSnip(`ezmlm_hash($\{});$\{}`, {
         label: "ezmlm_hash()",
         detail: "Mail",
         type: "method",

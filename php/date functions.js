@@ -1,6 +1,6 @@
 window.phpIntellisense.dateFunctions = [
     //? ------------------ checkdate()
-    snip(`checkdate($\{month}, $\{day}, $\{year});$\{}`, {
+    window.cmSnip(`checkdate($\{month}, $\{day}, $\{year});$\{}`, {
         label: "checkdate()",
         detail: "Date",
         type: "method",
@@ -8,7 +8,7 @@ window.phpIntellisense.dateFunctions = [
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The checkdate() function is binary-safe.`
     }),
     //? ------------------ date_add()
-    snip(`date_add($\{date}, $\{interval});$\{}`, {
+    window.cmSnip(`date_add($\{date}, $\{interval});$\{}`, {
         label: "date_add()",
         detail: "Date",
         type: "method",
@@ -16,7 +16,7 @@ window.phpIntellisense.dateFunctions = [
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_add() function is binary-safe.`
     }),
     //? ------------------ date_create_from_format()
-    snip(`date_create_from_format($\{format}, $\{time});$\{}`, {
+    window.cmSnip(`date_create_from_format($\{format}, $\{time});$\{}`, {
         label: "date_create_from_format()",
         detail: "Date",
         type: "method",
@@ -25,7 +25,7 @@ the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ date_create()
-    snip(`date_create($\{time});$\{}`, {
+    window.cmSnip(`date_create($\{time});$\{}`, {
         label: "date_create()",
         detail: "Date",
         type: "method",
@@ -33,7 +33,7 @@ the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ date_date_set()
-    snip(`date_date_set($\{object}, $\{year}, $\{month}, $\{day});$\{}`, {
+    window.cmSnip(`date_date_set($\{object}, $\{year}, $\{month}, $\{day});$\{}`, {
         label: "date_date_set()",
         detail: "Date",
         type: "method",
@@ -41,28 +41,28 @@ the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_date_set() function is binary-safe.`
     }),
     //? ------------------ date_default_timezone_get()
-    snip(`date_default_timezone_get();$\{}`, {
+    window.cmSnip(`date_default_timezone_get();$\{}`, {
         label: "date_default_timezone_get()",
         detail: "Date",
         type: "method",
         info: `The date_default_timezone_get() function returns the default timezone used by all date/time functions in the script.`
     }),
     //? ------------------ date_default_timezone_set()
-    snip(`date_default_timezone_set($\{timezone});$\{}`, {
+    window.cmSnip(`date_default_timezone_set($\{timezone});$\{}`, {
         label: "date_default_timezone_set()",
         detail: "Date",
         type: "method",
         info: `The date_default_timezone_set() function sets the default timezone used by all date/time functions in the script.`
     }),
     //? ------------------ date_diff()
-    snip(`date_diff($\{object}, $\{object});$\{}`, {
+    window.cmSnip(`date_diff($\{object}, $\{object});$\{}`, {
         label: "date_diff()",
         detail: "Date",
         type: "method",
         info: `The date_diff() function returns the difference between two DateTime objects.`
     }),
     //? ------------------ date_format()
-    snip(`date_format($\{object}, $\{format});$\{}`, {
+    window.cmSnip(`date_format($\{object}, $\{format});$\{}`, {
         label: "date_format()",
         detail: "Date",
         type: "method",
@@ -72,21 +72,21 @@ English).<br><br>
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg><span>Tip:</span></b> Also look at the date() function, which formats a local date/time.`
     }),
     //? ------------------ date_get_last_errors()
-    snip(`date_get_last_errors();$\{}`, {
+    window.cmSnip(`date_get_last_errors();$\{}`, {
         label: "date_get_last_errors()",
         detail: "Date",
         type: "method",
         info: `The date_get_last_errors() function returns the warnings/errors found while parsing a date string.`
     }),
     //? ------------------ date_interval_create_from_date_string()
-    snip(`date_interval_create_from_date_string($\{time});$\{}`, {
+    window.cmSnip(`date_interval_create_from_date_string($\{time});$\{}`, {
         label: "date_interval_create_from_date_string()",
         detail: "Date",
         type: "method",
         info: `The date_interval_create_from_date_string() function sets up a DateInterval from the relative parts of the string.`
     }),
     //? ------------------ date_interval_format()
-    snip(`date_interval_format($\{object}, $\{format});$\{}`, {
+    window.cmSnip(`date_interval_format($\{object}, $\{format});$\{}`, {
         label: "date_interval_format()",
         detail: "Date",
         type: "method",
@@ -95,7 +95,7 @@ The DateInterval::format() function is used to format the interval.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ date_isodate_set()
-    snip(`date_isodate_set($\{object}, $\{year}, $\{week}, $\{day});$\{}`, {
+    window.cmSnip(`date_isodate_set($\{object}, $\{year}, $\{week}, $\{day});$\{}`, {
         label: "date_isodate_set()",
         detail: "Date",
         type: "method",
@@ -104,7 +104,7 @@ offsets (instead of using a specific date).<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_isodate_set() function is binary-safe.`
     }),
     //? ------------------ date_modify()
-    snip(`date_modify($\{object}, $\{modify});$\{}`, {
+    window.cmSnip(`date_modify($\{object}, $\{modify});$\{}`, {
         label: "date_modify()",
         detail: "Date",
         type: "method",
@@ -112,7 +112,7 @@ offsets (instead of using a specific date).<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_modify() function is binary-safe.`
     }),
     //? ------------------ date_offset_get()
-    snip(`date_offset_get($\{object});$\{}`, {
+    window.cmSnip(`date_offset_get($\{object});$\{}`, {
         label: "date_offset_get()",
         detail: "Date",
         type: "method",
@@ -120,7 +120,7 @@ offsets (instead of using a specific date).<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_offset_get() function is binary-safe.`
     }),
     //? ------------------ date_parse_from_format()
-    snip(`date_parse_from_format($\{format}, $\{time});$\{}`, {
+    window.cmSnip(`date_parse_from_format($\{format}, $\{time});$\{}`, {
         label: "date_parse_from_format()",
         detail: "Date",
         type: "method",
@@ -129,7 +129,7 @@ a specified date, according to the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ date_parse()
-    snip(`date_parse($\{time});$\{}`, {
+    window.cmSnip(`date_parse($\{time});$\{}`, {
         label: "date_parse()",
         detail: "Date",
         type: "method",
@@ -137,7 +137,7 @@ a specified date, according to the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ date_sub()
-    snip(`date_sub($\{object}, $\{interval});$\{}`, {
+    window.cmSnip(`date_sub($\{object}, $\{interval});$\{}`, {
         label: "date_sub()",
         detail: "Date",
         type: "method",
@@ -145,7 +145,7 @@ a specified date, according to the specified format.<br><br>
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_sub() function is binary-safe.`
     }),
     //? ------------------ date_sun_info()
-    snip(`date_sun_info($\{time}, $\{latitude}, $\{longitude});$\{}`, {
+    window.cmSnip(`date_sun_info($\{time}, $\{latitude}, $\{longitude});$\{}`, {
         label: "date_sun_info()",
         detail: "Date",
         type: "method",
@@ -156,7 +156,7 @@ to return the sunrise time for a specified day and location.<br><br>
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg><span>Tip:</span></b> Look at the date_sunset() function to return the sunset time for a specified day and location.`
     }),
     //? ------------------ date_sunrise()
-    snip(`date_sunrise($\{time}, $\{latitude}, $\{longitude});$\{}`, {
+    window.cmSnip(`date_sunrise($\{time}, $\{latitude}, $\{longitude});$\{}`, {
         label: "date_sunrise()",
         detail: "Date",
         type: "method",
@@ -165,7 +165,7 @@ to return the sunrise time for a specified day and location.<br><br>
 to return the sunset time for a specified day and location.`
     }),
     //? ------------------ date_sunset()
-    snip(`date_sunset($\{time}, $\{latitude}, $\{longitude});$\{}`, {
+    window.cmSnip(`date_sunset($\{time}, $\{latitude}, $\{longitude});$\{}`, {
         label: "date_sunset()",
         detail: "Date",
         type: "method",
@@ -174,7 +174,7 @@ to return the sunset time for a specified day and location.`
 to return the sunrise time for a specified day and location.`
     }),
     //? ------------------ date_time_set()
-    snip(`date_time_set($\{object}, $\{hour}, $\{minute}, $\{second});$\{}`, {
+    window.cmSnip(`date_time_set($\{object}, $\{hour}, $\{minute}, $\{second});$\{}`, {
         label: "date_time_set()",
         detail: "Date",
         type: "method",
@@ -182,7 +182,7 @@ to return the sunrise time for a specified day and location.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_time_set() function is binary-safe.`
     }),
     //? ------------------ date_timestamp_get()
-    snip(`date_timestamp_get($\{object});$\{}`, {
+    window.cmSnip(`date_timestamp_get($\{object});$\{}`, {
         label: "date_timestamp_get()",
         detail: "Date",
         type: "method",
@@ -190,7 +190,7 @@ to return the sunrise time for a specified day and location.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_timestamp_get() function is binary-safe.`
     }),
     //? ------------------ date_timestamp_set()
-    snip(`date_timestamp_set($\{object}, $\{unixtimestamp});$\{}`, {
+    window.cmSnip(`date_timestamp_set($\{object}, $\{unixtimestamp});$\{}`, {
         label: "date_timestamp_set()",
         detail: "Date",
         type: "method",
@@ -198,7 +198,7 @@ to return the sunrise time for a specified day and location.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_timestamp_set() function is binary-safe.`
     }),
     //? ------------------ date_timezone_get()
-    snip(`date_timezone_get($\{object});$\{}`, {
+    window.cmSnip(`date_timezone_get($\{object});$\{}`, {
         label: "date_timezone_get()",
         detail: "Date",
         type: "method",
@@ -206,7 +206,7 @@ to return the sunrise time for a specified day and location.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_timezone_get() function is binary-safe.`
     }),
     //? ------------------ date_timezone_set()
-    snip(`date_timezone_set($\{object}, $\{timezone});$\{}`, {
+    window.cmSnip(`date_timezone_set($\{object}, $\{timezone});$\{}`, {
         label: "date_timezone_set()",
         detail: "Date",
         type: "method",
@@ -214,7 +214,7 @@ to return the sunrise time for a specified day and location.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The date_timezone_set() function is binary-safe.`
     }),
     //? ------------------ date()
-    snip(`date($\{format}, $\{timestamp});$\{}`, {
+    window.cmSnip(`date($\{format}, $\{timestamp});$\{}`, {
         label: "date()",
         detail: "Date",
         type: "method",
@@ -225,7 +225,7 @@ English).<br><br>
 function, which formats a local date/time.`
     }),
     //? ------------------ getdate()
-    snip(`getdate($\{timestamp});$\{}`, {
+    window.cmSnip(`getdate($\{timestamp});$\{}`, {
         label: "getdate()",
         detail: "Date",
         type: "method",
@@ -233,7 +233,7 @@ function, which formats a local date/time.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The getdate() function is binary-safe.`
     }),
     //? ------------------ gettimeofday()
-    snip(`gettimeofday($\{returnfloat});$\{}`, {
+    window.cmSnip(`gettimeofday($\{returnfloat});$\{}`, {
         label: "gettimeofday()",
         detail: "Date",
         type: "method",
@@ -241,7 +241,7 @@ function, which formats a local date/time.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The gettimeofday() function is binary-safe.`
     }),
     //? ------------------ gmdate()
-    snip(`gmdate($\{format}, $\{timestamp});$\{}`, {
+    window.cmSnip(`gmdate($\{format}, $\{timestamp});$\{}`, {
         label: "gmdate()",
         detail: "Date",
         type: "method",
@@ -252,7 +252,7 @@ English).<br><br>
 function, which formats a local date/time.`
     }),
     //? ------------------ gmmktime()
-    snip(`gmmktime($\{hour}, $\{minute}, $\{second}, $\{month}, $\{day}, $\{year});$\{}`, {
+    window.cmSnip(`gmmktime($\{hour}, $\{minute}, $\{second}, $\{month}, $\{day}, $\{year});$\{}`, {
         label: "gmmktime()",
         detail: "Date",
         type: "method",
@@ -261,7 +261,7 @@ function, which formats a local date/time.`
 except the passed parameters represents a GMT date.`
     }),
     //? ------------------ gmstrftime()
-    snip(`gmstrftime($\{format}, $\{timestamp});$\{}`, {
+    window.cmSnip(`gmstrftime($\{format}, $\{timestamp});$\{}`, {
         label: "gmstrftime()",
         detail: "Date",
         type: "method",
@@ -270,7 +270,7 @@ except the passed parameters represents a GMT date.`
 which formats a local time and/or date according to locale settings.`
     }),
     //? ------------------ idate()
-    snip(`idate($\{format}, $\{timestamp});$\{}`, {
+    window.cmSnip(`idate($\{format}, $\{timestamp});$\{}`, {
         label: "idate()",
         detail: "Date",
         type: "method",
@@ -279,7 +279,7 @@ which formats a local time and/or date according to locale settings.`
 `
     }),
     //? ------------------ localtime()
-    snip(`localtime($\{timestamp}, $\{associativeArray});$\{}`, {
+    window.cmSnip(`localtime($\{timestamp}, $\{associativeArray});$\{}`, {
         label: "localtime()",
         detail: "Date",
         type: "method",
@@ -287,7 +287,7 @@ which formats a local time and/or date according to locale settings.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The localtime() function is binary-safe.`
     }),
     //? ------------------ microtime()
-    snip(`microtime($\{getAsFloat});$\{}`, {
+    window.cmSnip(`microtime($\{getAsFloat});$\{}`, {
         label: "microtime()",
         detail: "Date",
         type: "method",
@@ -295,7 +295,7 @@ which formats a local time and/or date according to locale settings.`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The microtime() function is binary-safe.`
     }),
     //? ------------------ mktime()
-    snip(`mktime($\{hour}, $\{minute}, $\{second}, $\{month}, $\{day}, $\{year});$\{}`, {
+    window.cmSnip(`mktime($\{hour}, $\{minute}, $\{second}, $\{month}, $\{day}, $\{year});$\{}`, {
         label: "mktime()",
         detail: "Date",
         type: "method",
@@ -304,7 +304,7 @@ which formats a local time and/or date according to locale settings.`
 represents a date (not a GMT date).`
     }),
     //? ------------------ strftime()
-    snip(`strftime($\{format}, $\{timestamp});$\{}`, {
+    window.cmSnip(`strftime($\{format}, $\{timestamp});$\{}`, {
         label: "strftime()",
         detail: "Date",
         type: "method",
@@ -313,7 +313,7 @@ represents a date (not a GMT date).`
 which formats a GMT/UTC time and/or date according to locale settings.`
     }),
     //? ------------------ strptime()
-    snip(`strptime($\{date}, $\{format});$\{}`, {
+    window.cmSnip(`strptime($\{date}, $\{format});$\{}`, {
         label: "strptime()",
         detail: "Date",
         type: "method",
@@ -322,7 +322,7 @@ which formats a GMT/UTC time and/or date according to locale settings.`
 `
     }),
     //? ------------------ strtotime()
-    snip(`strtotime($\{time});$\{}`, {
+    window.cmSnip(`strtotime($\{time});$\{}`, {
         label: "strtotime()",
         detail: "Date",
         type: "method",
@@ -337,7 +337,7 @@ To avoid potential errors, you should YYYY-MM-DD dates or
 date_create_from_format() when possible.`
     }),
     //? ------------------ time()
-    snip(`time($\{returnfloat});$\{}`, {
+    window.cmSnip(`time($\{returnfloat});$\{}`, {
         label: "time()",
         detail: "Date",
         type: "method",
@@ -345,63 +345,63 @@ date_create_from_format() when possible.`
 the Unix Epoch (January 1 1970 00:00:00 GMT).`
     }),
     //? ------------------ timezone_abbreviations_list()
-    snip(`timezone_abbreviations_list($\{what});$\{}`, {
+    window.cmSnip(`timezone_abbreviations_list($\{what});$\{}`, {
         label: "timezone_abbreviations_list()",
         detail: "Date",
         type: "method",
         info: `The timezone_abbreviations_list() returns an associative array containing dst, offset, and the timezone name.`
     }),
     //? ------------------ timezone_identifiers_list()
-    snip(`timezone_identifiers_list($\{what});$\{}`, {
+    window.cmSnip(`timezone_identifiers_list($\{what});$\{}`, {
         label: "timezone_identifiers_list()",
         detail: "Date",
         type: "method",
         info: `The timezone_identifiers_list() returns an indexed array containing all timezone identifiers.`
     }),
     //? ------------------ timezone_location_get()
-    snip(`timezone_location_get($\{object});$\{}`, {
+    window.cmSnip(`timezone_location_get($\{object});$\{}`, {
         label: "timezone_location_get()",
         detail: "Date",
         type: "method",
         info: `The timezone_location_get() returns location information for the given timezone.`
     }),
     //? ------------------ timezone_name_from_abbr()
-    snip(`timezone_name_from_abbr($\{abbr}, $\{gmtOffset});$\{}`, {
+    window.cmSnip(`timezone_name_from_abbr($\{abbr}, $\{gmtOffset});$\{}`, {
         label: "timezone_name_from_abbr()",
         detail: "Date",
         type: "method",
         info: `The timezone_name_from_abbr() returns the timezone name from abbreviation.`
     }),
     //? ------------------ timezone_name_get()
-    snip(`timezone_name_get($\{object});$\{}`, {
+    window.cmSnip(`timezone_name_get($\{object});$\{}`, {
         label: "timezone_name_get()",
         detail: "Date",
         type: "method",
         info: `The timezone_name_get() returns the name of the timezone.`
     }),
     //? ------------------ timezone_offset_get()
-    snip(`timezone_offset_get($\{object});$\{}`, {
+    window.cmSnip(`timezone_offset_get($\{object});$\{}`, {
         label: "timezone_offset_get()",
         detail: "Date",
         type: "method",
         info: `The timezone_offset_get() returns the timezone offset from GMT.`
     }),
     //? ------------------ timezone_open()
-    snip(`timezone_open($\{timezone});$\{}`, {
+    window.cmSnip(`timezone_open($\{timezone});$\{}`, {
         label: "timezone_open()",
         detail: "Date",
         type: "method",
         info: `The timezone_open() creates a new DateTimeZone object.`
     }),
     //? ------------------ timezone_transitions_get()
-    snip(`timezone_transitions_get($\{object});$\{}`, {
+    window.cmSnip(`timezone_transitions_get($\{object});$\{}`, {
         label: "timezone_transitions_get()",
         detail: "Date",
         type: "method",
         info: `The timezone_transitions_get() returns all transitions for the timezone.`
     }),
     //? ------------------ timezone_version_get()
-    snip(`timezone_version_get();$\{}`, {
+    window.cmSnip(`timezone_version_get();$\{}`, {
         label: "timezone_version_get()",
         detail: "Date",
         type: "method",

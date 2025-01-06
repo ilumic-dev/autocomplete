@@ -1,13 +1,13 @@
 window.phpIntellisense.directoryFunctions = [
     //? ------------------ chdir()
-    snip(`chdir($\{directory});$\{}`, {
+    window.cmSnip(`chdir($\{directory});$\{}`, {
         label: "chdir()",
         type: "method",
         detail: "Directory",
         info: `The chdir() function changes the current directory.`
     }),
     //? ------------------ chroot()
-    snip(`chroot($\{directory});$\{}`, {
+    window.cmSnip(`chroot($\{directory});$\{}`, {
         label: "chroot()",
         type: "method",
         detail: "Directory",
@@ -16,14 +16,14 @@ window.phpIntellisense.directoryFunctions = [
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is not implemented on Windows platforms.`
     }),
     //? ------------------ closedir()
-    snip(`closedir($\{directory});$\{}`, {
+    window.cmSnip(`closedir($\{directory});$\{}`, {
         label: "closedir()",
         type: "method",
         detail: "Directory",
         info: `The closedir() function closes a directory handle.`
     }),
     //? ------------------ dir()
-    snip(`dir($\{directory});$\{}`, {
+    window.cmSnip(`dir($\{directory});$\{}`, {
         label: "dir()",
         type: "method",
         detail: "Directory",
@@ -35,35 +35,35 @@ window.phpIntellisense.directoryFunctions = [
 </ul>`
     }),
     //? ------------------ getcwd()
-    snip(`getcwd();$\{}`, {
+    window.cmSnip(`getcwd();$\{}`, {
         label: "getcwd()",
         type: "method",
         detail: "Directory",
         info: `The getcwd() function returns the current working directory.`
     }),
     //? ------------------ opendir()
-    snip(`opendir($\{path});$\{}`, {
+    window.cmSnip(`opendir($\{path});$\{}`, {
         label: "opendir()",
         type: "method",
         detail: "Directory",
         info: `The opendir() function opens a directory handle.`
     }),
     //? ------------------ readdir()
-    snip(`readdir($\{directory});$\{}`, {
+    window.cmSnip(`readdir($\{directory});$\{}`, {
         label: "readdir()",
         type: "method",
         detail: "Directory",
         info: `The readdir() function returns the name of the next entry in a directory.`
     }),
     //? ------------------ rewinddir()
-    snip(`rewinddir($\{directory});$\{}`, {
+    window.cmSnip(`rewinddir($\{directory});$\{}`, {
         label: "rewinddir()",
         type: "method",
         detail: "Directory",
         info: `The rewinddir() function resets the directory handle created by opendir().`
     }),
     //? ------------------ scandir()
-    snip(`scandir($\{directory});$\{}`, {
+    window.cmSnip(`scandir($\{directory});$\{}`, {
         label: "scandir()",
         type: "method",
         detail: "Directory",

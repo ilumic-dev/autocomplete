@@ -1,6 +1,6 @@
 window.phpIntellisense.stringFunctions = [
     //? ------------------ addcslashes()
-    snip(`addcslashes($\{string}, $\{characters});$\{}`, {
+    window.cmSnip(`addcslashes($\{string}, $\{characters});$\{}`, {
         label: "addcslashes()",
         detail: "String",
         type: "method",
@@ -9,7 +9,7 @@ window.phpIntellisense.stringFunctions = [
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> Be careful using addcslashes() on 0 (NULL), r (carriage return), n (newline), f (form feed), t (tab) and v (vertical tab). In PHP, \\0, \\r, \\n, \\t, \\f and \\v are predefined escape sequences.`
     }),
     //? ------------------ addslashes()
-    snip(`addslashes($\{string});$\{}`, {
+    window.cmSnip(`addslashes($\{string});$\{}`, {
         label: "addslashes()",
         detail: "String",
         type: "method",
@@ -25,21 +25,21 @@ window.phpIntellisense.stringFunctions = [
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> Prior to PHP 5.4, the PHP dir magic_quotes_gpc was on by default and it ran addslashes() on all GET, POST, and COOKIE data by default. You should not use addslashes() on strings that have already been escaped, as it will cause double escaping. The function get_magic_quotes_gpc() can be used to check this.`
     }),
     //? ------------------ bin2hex()
-    snip(`bin2hex($\{string});$\{}`, {
+    window.cmSnip(`bin2hex($\{string});$\{}`, {
         label: "bin2hex()",
         detail: "String",
         type: "method",
         info: `The bin2hex() function converts a string of ASCII characters to hexadecimal values. The string can be converted back using the pack() function.`
     }),
     //? ------------------ chop()
-    snip(`chop($\{string});$\{}`, {
+    window.cmSnip(`chop($\{string});$\{}`, {
         label: "chop()",
         detail: "String",
         type: "method",
         info: `The chop() function removes whitespaces or other predefined characters from the right end of a string.`
     }),
     //? ------------------ chr()
-    snip(`chr($\{ascii});$\{}`, {
+    window.cmSnip(`chr($\{ascii});$\{}`, {
         label: "chr()",
         detail: "String",
         type: "method",
@@ -47,7 +47,7 @@ window.phpIntellisense.stringFunctions = [
 The ASCII value can be specified in decimal, octal, or hex values. Octal values are defined by a leading 0, while hex values are defined by a leading 0x.`
     }),
     //? ------------------ chunk_split()
-    snip(`chunk_split($\{string}, $\{length});$\{}`, {
+    window.cmSnip(`chunk_split($\{string}, $\{length});$\{}`, {
         label: "chunk_split()",
         detail: "String",
         type: "method",
@@ -55,7 +55,7 @@ The ASCII value can be specified in decimal, octal, or hex values. Octal values 
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function does not alter the original string.`
     }),
     //? ------------------ convert_cyr_string()
-    snip(`convert_cyr_string($\{string}, $\{from}, $\{to});$\{}`, {
+    window.cmSnip(`convert_cyr_string($\{string}, $\{from}, $\{to});$\{}`, {
         label: "convert_cyr_string()",
         detail: "String",
         type: "method",
@@ -71,14 +71,14 @@ The ASCII value can be specified in decimal, octal, or hex values. Octal values 
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ convert_uudecode()
-    snip(`convert_uudecode($\{string});$\{}`, {
+    window.cmSnip(`convert_uudecode($\{string});$\{}`, {
         label: "convert_uudecode()",
         detail: "String",
         type: "method",
         info: `The convert_uudecode() function decodes a uuencoded string.`
     }),
     //? ------------------ convert_uuencode()
-    snip(`convert_uuencode($\{string});$\{}`, {
+    window.cmSnip(`convert_uuencode($\{string});$\{}`, {
         label: "convert_uuencode()",
         detail: "String",
         type: "method",
@@ -87,14 +87,14 @@ The ASCII value can be specified in decimal, octal, or hex values. Octal values 
 </b>Note:</b> Uuencoded data is about 35% larger than the original.`
     }),
     //? ------------------ count_chars()
-    snip(`count_chars($\{string}, $\{0});$\{}`, {
+    window.cmSnip(`count_chars($\{string}, $\{0});$\{}`, {
         label: "count_chars()",
         detail: "String",
         type: "method",
         info: `The count_chars() function returns information about characters used in a string (for example, how many times an ASCII character occurs in a string, or which characters that have been used or not been used in a string).`
     }),
     //? ------------------ crc32()
-    snip(`crc32($\{string});$\{}`, {
+    window.cmSnip(`crc32($\{string});$\{}`, {
         label: "crc32()",
         detail: "String",
         type: "method",
@@ -103,7 +103,7 @@ This function can be used to validate data integrity.<br><br>
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> To ensure that you get the correct string representation from the crc32() function, you'll need to use the %u formatter of the printf() or sprintf() function. If the %u formatter is not used, the result may display in incorrect and negative numbers.`
     }),
     //? ------------------ crypt()
-    snip(`crypt($\{string}, $\{salt});$\{}`, {
+    window.cmSnip(`crypt($\{string}, $\{salt});$\{}`, {
         label: "crypt()",
         detail: "String",
         type: "method",
@@ -112,7 +112,7 @@ This function can be used to validate data integrity.<br><br>
 <a target="_blank" href="https://www.php.net/manual/en/function.crypt.php">php.net</a> <span style="opacity: 0.5">|</span> <a target="_blank" href="https://www.w3schools.com/php/func_string_crypt.asp">w3schools.com</a>`
     }),
     //? ------------------ explode()
-    snip(`explode($\{separator}, $\{string});$\{}`, {
+    window.cmSnip(`explode($\{separator}, $\{string});$\{}`, {
         label: "explode()",
         detail: "String",
         type: "method",
@@ -121,7 +121,7 @@ This function can be used to validate data integrity.<br><br>
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ fprint()
-    snip(`fprint($\{});$\{}`, {
+    window.cmSnip(`fprint($\{});$\{}`, {
         label: "fprint()",
         detail: "String",
         type: "method",
@@ -131,7 +131,7 @@ The arg1, arg2, ++ parameters will be inserted at percent (%) signs in the main 
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Related functions: <code>printf()</code>, <code>sprintf()</code>, <code>vprintf()</code>, <code>vsprintf()</code> and <code>vfprintf()</code>`
     }),
     //? ------------------ get_html_translation_table()
-    snip(`get_html_translation_table($\{});$\{}`, {
+    window.cmSnip(`get_html_translation_table($\{});$\{}`, {
         label: "get_html_translation_table()",
         detail: "String",
         type: "method",
@@ -139,7 +139,7 @@ The arg1, arg2, ++ parameters will be inserted at percent (%) signs in the main 
 Tip: Some characters can be encoded several ways. The get_html_translation_table() function returns the most common encoding.`
     }),
     //? ------------------ hrebrev()
-    snip(`hrebrev($\{string});$\{}`, {
+    window.cmSnip(`hrebrev($\{string});$\{}`, {
         label: "hrebrev()",
         detail: "String",
         type: "method",
@@ -147,7 +147,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> hebrev() and hebrevc() can convert Hebrew logical text (the Windows encoding) to Hebrew visual text. Hebrew visual requires no special right-to-left character support to be displayed properly, making it very useful for displaying Hebrew text on the web.`
     }),
     //? ------------------ hebrevc()
-    snip(`hebrevc($\{string});$\{}`, {
+    window.cmSnip(`hebrevc($\{string});$\{}`, {
         label: "hebrevc()",
         detail: "String",
         type: "method",
@@ -155,14 +155,14 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> hebrevc() and hebrev() can convert Hebrew logical text (the Windows encoding) to Hebrew visual text. Hebrew visual requires no special right-to-left character support to be displayed properly, making it very useful for displaying Hebrew text on the web.`
     }),
     //? ------------------ hex2bin()
-    snip(`hex2bin($\{hex});$\{}`, {
+    window.cmSnip(`hex2bin($\{hex});$\{}`, {
         label: "hex2bin()",
         detail: "String",
         type: "method",
         info: `The hex2bin() function converts a string of hexadecimal values to ASCII characters.`
     }),
     //? ------------------ html_entity_decode()
-    snip(`html_entity_decode($\{string});$\{}`, {
+    window.cmSnip(`html_entity_decode($\{string});$\{}`, {
         label: "html_entity_decode()",
         detail: "String",
         type: "method",
@@ -170,7 +170,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The html_entity_decode() function is the opposite of htmlentities().`
     }),
     //? ------------------ htmlentities()
-    snip(`htmlentities($\{string});$\{}`, {
+    window.cmSnip(`htmlentities($\{string});$\{}`, {
         label: "htmlentities()",
         detail: "String",
         type: "method",
@@ -179,7 +179,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Use the get_html_translation_table() function to return the translation table used by htmlentities().`
     }),
     //? ------------------ htmlspecialchars_decode()
-    snip(`htmlspecialchars_decode($\{string});$\{}`, {
+    window.cmSnip(`htmlspecialchars_decode($\{string});$\{}`, {
         label: "htmlspecialchars_decode()",
         detail: "String",
         type: "method",
@@ -195,7 +195,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The htmlspecialchars_decode() function is the opposite of htmlspecialchars().`
     }),
     //? ------------------ htmlspecialchars()
-    snip(`htmlspecialchars($\{string});$\{}`, {
+    window.cmSnip(`htmlspecialchars($\{string});$\{}`, {
         label: "htmlspecialchars()",
         detail: "String",
         type: "method",
@@ -211,7 +211,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> To convert special HTML entities back to characters, use the htmlspecialchars_decode() function. `
     }),
     //? ------------------ implode()
-    snip(`implode($\{"separator"}, $\{$array});$\{}`, {
+    window.cmSnip(`implode($\{"separator"}, $\{$array});$\{}`, {
         label: "implode()",
         detail: "Array",
         type: "method",
@@ -221,7 +221,7 @@ Tip: Some characters can be encoded several ways. The get_html_translation_table
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ join()
-    snip(`join($\{"separator"}, $\{$array});$\{}`, {
+    window.cmSnip(`join($\{"separator"}, $\{$array});$\{}`, {
         label: "join()",
         detail: "Array",
         type: "method",
@@ -231,14 +231,14 @@ The join() function is an alias of the implode() function.<br><br>
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The separator parameter of join() is optional. However, it is recommended to always use two parameters for backwards compatibility.`
     }),
     //? ------------------ lcfirst()
-    snip(`lcfirst($\{string});$\{}`, {
+    window.cmSnip(`lcfirst($\{string});$\{}`, {
         label: "lcfirst()",
         detail: "String",
         type: "method",
         info: `The lcfirst() function converts the first character of a string to lowercase.`
     }),
     //? ------------------ levenshtein()
-    snip(`levenshtein($\{string1}, $\{string2});$\{}`, {
+    window.cmSnip(`levenshtein($\{string1}, $\{string2});$\{}`, {
         label: "levenshtein()",
         detail: "String",
         type: "method",
@@ -249,7 +249,7 @@ By default, PHP gives each operation (replace, insert, and delete) equal weight.
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The levenshtein() function is faster than the similar_text() function. However, similar_text() will give you a more accurate result with less modifications needed.`
     }),
     //? ------------------ localeconv()
-    snip(`localeconv();$\{}`, {
+    window.cmSnip(`localeconv();$\{}`, {
         label: "localeconv()",
         detail: "Array",
         type: "method",
@@ -258,7 +258,7 @@ By default, PHP gives each operation (replace, insert, and delete) equal weight.
 <a target="_blank" href="https://www.php.net/manual/en/function.localeconv.php">php.net</a> <span style="opacity: 0.5">|</span> <a target="_blank" href="https://www.w3schools.com/php/func_string_localeconv.asp">w3schools.com</a>`
     }),
     //? ------------------ ltrim()
-    snip(`ltrim($\{"string"});$\{}`, {
+    window.cmSnip(`ltrim($\{"string"});$\{}`, {
         label: "ltrim()",
         detail: "String",
         type: "method",
@@ -270,7 +270,7 @@ By default, PHP gives each operation (replace, insert, and delete) equal weight.
 </ul>`
     }),
     //? ------------------ md5()
-    snip(`md5($\{"string"});$\{}`, {
+    window.cmSnip(`md5($\{"string"});$\{}`, {
         label: "md5()",
         detail: "String",
         type: "method",
@@ -280,7 +280,7 @@ The md5() function uses the RSA Data Security, Inc. MD5 Message-Digest Algorithm
 To calculate the MD5 hash of a file, use the md5_file() function.`
     }),
     //? ------------------ md5_file()
-    snip(`md5_file($\{file});$\{}`, {
+    window.cmSnip(`md5_file($\{file});$\{}`, {
         label: "md5_file()",
         detail: "String",
         type: "method",
@@ -290,7 +290,7 @@ The md5_file() function uses the RSA Data Security, Inc. MD5 Message-Digest Algo
 To calculate the MD5 hash of a string, use the md5() function.`
     }),
     //? ------------------ metaphone()
-    snip(`metaphone($\{string});$\{}`, {
+    window.cmSnip(`metaphone($\{string});$\{}`, {
         label: "metaphone()",
         detail: "String",
         type: "method",
@@ -302,7 +302,7 @@ The metaphone() function can be used for spelling applications.<br><br>
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> metaphone() is more accurate than the soundex() function, because metaphone() knows the basic rules of English pronunciation. `
     }),
     //? ------------------ money_format()
-    snip(`money_format($\{"string"});$\{}`, {
+    window.cmSnip(`money_format($\{"string"});$\{}`, {
         label: "money_format()",
         detail: "String",
         type: "method",
@@ -312,7 +312,7 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function is often used together with the setlocale() function.`
     }),
     //? ------------------ nl_langinfo()
-    snip(`nl_langinfo($\{"string"});$\{}`, {
+    window.cmSnip(`nl_langinfo($\{"string"});$\{}`, {
         label: "nl_langinfo()",
         detail: "String",
         type: "method",
@@ -321,14 +321,14 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Unlike the localeconv() function, which returns all local formatting information, the nl_langinfo() function returns specific information.`
     }),
     //? ------------------ nl2br()
-    snip(`nl2br($\{"string"});$\{}`, {
+    window.cmSnip(`nl2br($\{"string"});$\{}`, {
         label: "nl2br()",
         detail: "String",
         type: "method",
         info: `The nl2br() function inserts HTML line breaks (＜br＞ or ＜br /＞) in front of each newline (\\n) in a string.`
     }),
     //? ------------------ number_format()
-    snip(`number_format($\{"string"});$\{}`, {
+    window.cmSnip(`number_format($\{"string"});$\{}`, {
         label: "number_format()",
         detail: "String",
         type: "method",
@@ -336,14 +336,14 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function supports one, two, or four parameters (not three).`
     }),
     //? ------------------ ord()
-    snip(`ord($\{"string"});$\{}`, {
+    window.cmSnip(`ord($\{"string"});$\{}`, {
         label: "ord()",
         detail: "String",
         type: "method",
         info: `The ord() function returns the ASCII value of the first character of a string.`
     }),
     //? ------------------ parse_str()
-    snip(`parse_str($\{"string"});$\{}`, {
+    window.cmSnip(`parse_str($\{"string"});$\{}`, {
         label: "parse_str()",
         detail: "String",
         type: "method",
@@ -352,7 +352,7 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The magic_quotes_gpc setting in the php.ini file affects the output of this function. If enabled, the variables are converted by addslashes() before parsed by parse_str().`
     }),
     //? ------------------ print()
-    snip(`print($\{"string"});$\{}`, {
+    window.cmSnip(`print($\{"string"});$\{}`, {
         label: "print()",
         detail: "String",
         type: "method",
@@ -361,14 +361,14 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> The print() function is slightly slower than echo().`
     }),
     //? ------------------ printf()
-    snip(`printf($\{});$\{}`, {
+    window.cmSnip(`printf($\{});$\{}`, {
         label: "printf()",
         detail: "String",
         type: "method",
         info: `The printf() function outputs a formatted string.`
     }),
     //? ------------------ quoted_printable_decode()
-    snip(`quoted_printable_decode($\{"string"});$\{}`, {
+    window.cmSnip(`quoted_printable_decode($\{"string"});$\{}`, {
         label: "quoted_printable_decode()",
         detail: "String",
         type: "method",
@@ -376,7 +376,7 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Data encoded in quoted-printable are unlikely to be modified by mail transport. A text which is entirely US-ASCII may be encoded in quoted-printable to ensure the integrity of the data should the message pass through a character-translating, or line-wrapping gateway.`
     }),
     //? ------------------ quoted_printable_encode()
-    snip(`quoted_printable_encode($\{"string"});$\{}`, {
+    window.cmSnip(`quoted_printable_encode($\{"string"});$\{}`, {
         label: "quoted_printable_encode()",
         detail: "String",
         type: "method",
@@ -385,7 +385,7 @@ This function inserts a formatted number where there is a percent (%) sign in th
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Data encoded in quoted-printable are unlikely to be modified by mail transport. A text which is entirely US-ASCII may be encoded in quoted-printable to ensure the integrity of the data should the message pass through a character-translating, or line-wrapping gateway.`
     }),
     //? ------------------ quotemeta()
-    snip(`quotemeta($\{"string"});$\{}`, {
+    window.cmSnip(`quotemeta($\{"string"});$\{}`, {
         label: "quotemeta()",
         detail: "String",
         type: "method",
@@ -408,7 +408,7 @@ This function can be used to escape characters with special meanings, such as ( 
 This function is binary-safe.`
     }),
     //? ------------------ rtrim()
-    snip(`rtrim($\{"string"});$\{}`, {
+    window.cmSnip(`rtrim($\{"string"});$\{}`, {
         label: "rtrim()",
         detail: "String",
         type: "method",
@@ -420,7 +420,7 @@ This function is binary-safe.`
 </ul>`
     }),
     //? ------------------ setlocale()
-    snip(`setlocale($\{constant}, $\{location});$\{}`, {
+    window.cmSnip(`setlocale($\{constant}, $\{location});$\{}`, {
         label: "setlocale()",
         detail: "String",
         type: "method",
@@ -431,7 +431,7 @@ Locale information is language, monetary, time and other information specific fo
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> To get numeric formatting information, see the localeconv() function.`
     }),
     //? ------------------ sha1()
-    snip(`sha1($\{"string"});$\{}`, {
+    window.cmSnip(`sha1($\{"string"});$\{}`, {
         label: "sha1()",
         detail: "String",
         type: "method",
@@ -441,7 +441,7 @@ From RFC 3174 - The US Secure Hash Algorithm 1: "<i>SHA-1 produces a 160-bit out
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> To calculate the SHA-1 hash of a file, use the sha1_file() function.`
     }),
     //? ------------------ sha1_file()
-    snip(`sha1_file($\{file});$\{}`, {
+    window.cmSnip(`sha1_file($\{file});$\{}`, {
         label: "sha1_file()",
         detail: "String",
         type: "method",
@@ -451,7 +451,7 @@ From RFC 3174 - The US Secure Hash Algorithm 1: "<i>SHA-1 produces a 160-bit out
 This function returns the calculated SHA-1 hash on success, or FALSE on failure.`
     }),
     //? ------------------ similar_text()
-    snip(`similar_text($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`similar_text($\{"string1"}, $\{"string2"});$\{}`, {
         label: "similar_text()",
         detail: "String",
         type: "method",
@@ -460,7 +460,7 @@ It can also calculate the similarity of the two strings in percent.<br><br>
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The levenshtein() function is faster than the similar_text() function. However, the similar_text() function will give you a more accurate result with less modifications needed`
     }),
     //? ------------------ soundex()
-    snip(`soundex($\{"string"});$\{}`, {
+    window.cmSnip(`soundex($\{"string"});$\{}`, {
         label: "soundex()",
         detail: "String",
         type: "method",
@@ -471,7 +471,7 @@ The soundex() function can be used for spelling applications.<br><br>
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> metaphone() is more accurate than soundex(), because metaphone() knows the basic rules of English pronunciation.`
     }),
     //? ------------------ sprintf()
-    snip(`sprintf($\{});$\{}`, {
+    window.cmSnip(`sprintf($\{});$\{}`, {
         label: "sprintf()",
         detail: "String",
         type: "method",
@@ -481,7 +481,7 @@ The arg1, arg2, ++ parameters will be inserted at percent (%) signs in the main 
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Related functions: printf(), vprintf(), vsprintf(), fprintf() and vfprintf()`
     }),
     //? ------------------ sscanf()
-    snip(`sscanf($\{"string"});$\{}`, {
+    window.cmSnip(`sscanf($\{"string"});$\{}`, {
         label: "sscanf()",
         detail: "String",
         type: "method",
@@ -494,14 +494,14 @@ If only two parameters are passed to this function, the data will be returned as
 </ul>`
     }),
     //? ------------------ str_getcsv()
-    snip(`str_getcsv($\{"string"});$\{}`, {
+    window.cmSnip(`str_getcsv($\{"string"});$\{}`, {
         label: "str_getcsv()",
         detail: "String",
         type: "method",
         info: `The str_getcsv() function parses a string for fields in CSV format and returns an array containing the fields read.`
     }),
     //? ------------------ str_ireplace()
-    snip(`str_ireplace($\{"string"});$\{}`, {
+    window.cmSnip(`str_ireplace($\{"string"});$\{}`, {
         label: "str_ireplace()",
         detail: "String",
         type: "method",
@@ -517,21 +517,21 @@ If only two parameters are passed to this function, the data will be returned as
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ str_pad()
-    snip(`str_pad($\{"string"}, $\{length});$\{}`, {
+    window.cmSnip(`str_pad($\{"string"}, $\{length});$\{}`, {
         label: "str_pad()",
         detail: "String",
         type: "method",
         info: `The str_pad() function pads a string to a new length.`
     }),
     //? ------------------ str_repeat()
-    snip(`str_repeat($\{"string"}, $\{times});$\{}`, {
+    window.cmSnip(`str_repeat($\{"string"}, $\{times});$\{}`, {
         label: "str_repeat()",
         detail: "String",
         type: "method",
         info: `The str_repeat() function repeats a string a specified number of times.`
     }),
     //? ------------------ str_replace()
-    snip(`str_replace($\{find}, $\{replace}, $\{"string"});$\{}`, {
+    window.cmSnip(`str_replace($\{find}, $\{replace}, $\{"string"});$\{}`, {
         label: "str_replace()",
         detail: "String",
         type: "method",
@@ -547,7 +547,7 @@ If only two parameters are passed to this function, the data will be returned as
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ str_rot13()
-    snip(`str_rot13($\{"string"});$\{}`, {
+    window.cmSnip(`str_rot13($\{"string"});$\{}`, {
         label: "str_rot13()",
         detail: "String",
         type: "method",
@@ -556,28 +556,28 @@ The ROT13 encoding shifts every letter 13 places in the alphabet. Numeric and no
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> Encoding and decoding are done by the same function. If you pass an encoded string as argument, the original string will be returned.`
     }),
     //? ------------------ str_shuffle()
-    snip(`str_shuffle($\{"string"});$\{}`, {
+    window.cmSnip(`str_shuffle($\{"string"});$\{}`, {
         label: "str_shuffle()",
         detail: "String",
         type: "method",
         info: `The str_shuffle() function randomly shuffles all the characters of a string.`
     }),
     //? ------------------ str_split()
-    snip(`str_split($\{"string"}, $\{length});$\{}`, {
+    window.cmSnip(`str_split($\{"string"}, $\{length});$\{}`, {
         label: "str_split()",
         detail: "String",
         type: "method",
         info: `The str_split() function splits a string into an array.`
     }),
     //? ------------------ str_word_count()
-    snip(`str_word_count($\{"string"}, $\{0});$\{}`, {
+    window.cmSnip(`str_word_count($\{"string"}, $\{0});$\{}`, {
         label: "str_word_count()",
         detail: "String",
         type: "method",
         info: `The str_word_count() function counts the number of words in a string.`
     }),
     //? ------------------ strcasecmp()
-    snip(`strcasecmp($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strcasecmp($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strcasecmp()",
         detail: "String",
         type: "method",
@@ -586,7 +586,7 @@ The ROT13 encoding shifts every letter 13 places in the alphabet. Numeric and no
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function is similar to the strncasecmp() function, with the difference that you can specify the number of characters from each string to be used in the comparison with strncasecmp(). `
     }),
     //? ------------------ strchr()
-    snip(`strchr($\{"string"}, $\{"needle"});$\{}`, {
+    window.cmSnip(`strchr($\{"string"}, $\{"needle"});$\{}`, {
         label: "strchr()",
         detail: "String",
         type: "method",
@@ -596,7 +596,7 @@ This function is an alias of the strstr() function.<br><br>
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is case-sensitive. For a case-insensitive search, use stristr() function.`
     }),
     //? ------------------ strcmp()
-    snip(`strcmp($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strcmp($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strcmp()",
         detail: "String",
         type: "method",
@@ -605,7 +605,7 @@ This function is an alias of the strstr() function.<br><br>
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function is similar to the strncmp() function, with the difference that you can specify the number of characters from each string to be used in the comparison with strncmp().`
     }),
     //? ------------------ strcoll()
-    snip(`strcoll($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strcoll($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strcoll()",
         detail: "String",
         type: "method",
@@ -615,7 +615,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> If the current locale is C or POSIX, this function works the same way as strcmp().`
     }),
     //? ------------------ strcspn()
-    snip(`strcspn($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strcspn($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strcspn()",
         detail: "String",
         type: "method",
@@ -625,7 +625,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 `
     }),
     //? ------------------ strip_tags()
-    snip(`strip_tags($\{"string"});$\{}`, {
+    window.cmSnip(`strip_tags($\{"string"});$\{}`, {
         label: "strip_tags()",
         detail: "String",
         type: "method",
@@ -634,7 +634,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ stripcslashes()
-    snip(`stripcslashes($\{"string"});$\{}`, {
+    window.cmSnip(`stripcslashes($\{"string"});$\{}`, {
         label: "stripcslashes()",
         detail: "String",
         type: "method",
@@ -642,7 +642,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function can be used to clean up data retrieved from a database or from an HTML form.`
     }),
     //? ------------------ stripslashes()
-    snip(`stripslashes($\{"string"});$\{}`, {
+    window.cmSnip(`stripslashes($\{"string"});$\{}`, {
         label: "stripslashes()",
         detail: "String",
         type: "method",
@@ -650,7 +650,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function can be used to clean up data retrieved from a database or from an HTML form.`
     }),
     //? ------------------ stripos()
-    snip(`stripos($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`stripos($\{"string1"}, $\{"string2"});$\{}`, {
         label: "stripos()",
         detail: "String",
         type: "method",
@@ -659,7 +659,7 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ stristr()
-    snip(`stristr($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`stristr($\{"string1"}, $\{"string2"});$\{}`, {
         label: "stristr()",
         detail: "String",
         type: "method",
@@ -668,14 +668,14 @@ The comparison of the strings may vary depending on the locale settings (A＜a o
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is case-insensitive. For a case-sensitive search, use strstr() function.`
     }),
     //? ------------------ strlen()
-    snip(`strlen($\{"string"});$\{}`, {
+    window.cmSnip(`strlen($\{"string"});$\{}`, {
         label: "strlen()",
         detail: "String",
         type: "method",
         info: `The strlen() function returns the length of a string.`
     }),
     //? ------------------ strnatcasecmp()
-    snip(`strnatcasecmp($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strnatcasecmp($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strnatcasecmp()",
         detail: "String",
         type: "method",
@@ -684,7 +684,7 @@ In a natural algorithm, the number 2 is less than the number 10. In computer sor
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> The strnatcasecmp() is case-insensitive.`
     }),
     //? ------------------ strnatcmp()
-    snip(`strnatcmp($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strnatcmp($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strnatcmp()",
         detail: "String",
         type: "method",
@@ -693,7 +693,7 @@ In a natural algorithm, the number 2 is less than the number 10. In computer sor
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is case-sensitive.`
     }),
     //? ------------------ strncasecmp()
-    snip(`strncasecmp($\{"string1"}, $\{"string2"}, $length);$\{}`, {
+    window.cmSnip(`strncasecmp($\{"string1"}, $\{"string2"}, $length);$\{}`, {
         label: "strncasecmp()",
         detail: "String",
         type: "method",
@@ -702,7 +702,7 @@ In a natural algorithm, the number 2 is less than the number 10. In computer sor
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function is similar to the strcasecmp() function, except that strcasecmp() does not have the length parameter. `
     }),
     //? ------------------ strncmp()
-    snip(`strncmp($\{"string1"}, $\{"string2"}, $length);$\{}`, {
+    window.cmSnip(`strncmp($\{"string1"}, $\{"string2"}, $length);$\{}`, {
         label: "strncmp()",
         detail: "String",
         type: "method",
@@ -711,7 +711,7 @@ In a natural algorithm, the number 2 is less than the number 10. In computer sor
 <b class="info-tip"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg> <span>Tip:</span></b></b> This function is similar to the strcmp() function, except that strcmp() does not have the length parameter. `
     }),
     //? ------------------ strpbrk()
-    snip(`strpbrk($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strpbrk($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strpbrk()",
         detail: "String",
         type: "method",
@@ -720,7 +720,7 @@ In a natural algorithm, the number 2 is less than the number 10. In computer sor
 This function returns the rest of the string from where it found the first occurrence of a specified character, otherwise it returns FALSE.`
     }),
     //? ------------------ strpos()
-    snip(`strpos($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strpos($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strpos()",
         detail: "String",
         type: "method",
@@ -729,7 +729,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg> <span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ strrchr()
-    snip(`strrchr($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strrchr($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strrchr()",
         detail: "String",
         type: "method",
@@ -737,14 +737,14 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ strrev()
-    snip(`strrev($\{"string"});$\{}`, {
+    window.cmSnip(`strrev($\{"string"});$\{}`, {
         label: "strrev()",
         detail: "String",
         type: "method",
         info: `The strrev() function reverses a string.`
     }),
     //? ------------------ strripos()
-    snip(`strripos($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strripos($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strripos()",
         detail: "String",
         type: "method",
@@ -752,7 +752,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The strripos() function is case-insensitive.`
     }),
     //? ------------------ strrpos()
-    snip(`strrpos($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strrpos($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strrpos()",
         detail: "String",
         type: "method",
@@ -760,7 +760,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> The strrpos() function is case-sensitive.`
     }),
     //? ------------------ strspn()
-    snip(`strspn($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strspn($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strspn()",
         detail: "String",
         type: "method",
@@ -769,7 +769,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ strstr()
-    snip(`strstr($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strstr($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strstr()",
         detail: "String",
         type: "method",
@@ -778,14 +778,14 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is case-sensitive. For a case-insensitive search, use stristr() functio`
     }),
     //? ------------------ strtok()
-    snip(`strtok($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strtok($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strtok()",
         detail: "String",
         type: "method",
         info: `The strtok() function splits a string into smaller strings (tokens).`
     }),
     //? ------------------ strtolower()
-    snip(`strtolower($\{"string"});$\{}`, {
+    window.cmSnip(`strtolower($\{"string"});$\{}`, {
         label: "strtolower()",
         detail: "String",
         type: "method",
@@ -793,7 +793,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ strtoupper()
-    snip(`strtoupper($\{"string"});$\{}`, {
+    window.cmSnip(`strtoupper($\{"string"});$\{}`, {
         label: "strtoupper()",
         detail: "String",
         type: "method",
@@ -801,7 +801,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ strtr()
-    snip(`strtr($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`strtr($\{"string1"}, $\{"string2"});$\{}`, {
         label: "strtr()",
         detail: "String",
         type: "method",
@@ -809,14 +809,14 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If the from and to parameters are different in length, both will be formatted to the length of the shortest.`
     }),
     //? ------------------ substr()
-    snip(`substr($\{});$\{}`, {
+    window.cmSnip(`substr($\{});$\{}`, {
         label: "substr()",
         detail: "String",
         type: "method",
         info: `The substr() function returns a part of a string.`
     }),
     //? ------------------ str_contains()
-    snip(`str_contains($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`str_contains($\{"string1"}, $\{"string2"});$\{}`, {
         label: "str_contains()",
         detail: "String",
         type: "method",
@@ -824,7 +824,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ substr_compare()
-    snip(`substr_compare($\{});$\{}`, {
+    window.cmSnip(`substr_compare($\{});$\{}`, {
         label: "substr_compare()",
         detail: "String",
         type: "method",
@@ -832,7 +832,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> This function is binary-safe and optionally case-sensitive.`
     }),
     //? ------------------ substr_count()
-    snip(`substr_count($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`substr_count($\{"string1"}, $\{"string2"});$\{}`, {
         label: "substr_count()",
         detail: "String",
         type: "method",
@@ -842,7 +842,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function generates a warning if the start parameter plus the length parameter is greater than the string length (see example 3).`
     }),
     //? ------------------ substr_replace()
-    snip(`substr_replace($\{});$\{}`, {
+    window.cmSnip(`substr_replace($\{});$\{}`, {
         label: "substr_replace()",
         detail: "String",
         type: "method",
@@ -852,7 +852,7 @@ This function returns the rest of the string from where it found the first occur
 `
     }),
     //? ------------------ str_starts_with()
-    snip(`str_starts_with($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`str_starts_with($\{"string1"}, $\{"string2"});$\{}`, {
         label: "str_starts_with()",
         detail: "String",
         type: "method",
@@ -860,7 +860,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ str_ends_with()
-    snip(`str_ends_with($\{"string1"}, $\{"string2"});$\{}`, {
+    window.cmSnip(`str_ends_with($\{"string1"}, $\{"string2"});$\{}`, {
         label: "str_ends_with()",
         detail: "String",
         type: "method",
@@ -869,21 +869,21 @@ This function returns the rest of the string from where it found the first occur
     }),
 
     //? ------------------ trim()
-    snip(`trim($\{"string"});$\{}`, {
+    window.cmSnip(`trim($\{"string"});$\{}`, {
         label: "trim()",
         detail: "String",
         type: "method",
         nfo: `The trim() function removes whitespace and other predefined characters from both sides of a string.`
     }),
     //? ------------------ ucfirst()
-    snip(`ucfirst($\{"string"});$\{}`, {
+    window.cmSnip(`ucfirst($\{"string"});$\{}`, {
         label: "ucfirst()",
         detail: "String",
         type: "method",
         info: `The ucfirst() function converts the first character of a string to uppercase.`
     }),
     //? ------------------ ucwords()
-    snip(`ucwords($\{"string"});$\{}`, {
+    window.cmSnip(`ucwords($\{"string"});$\{}`, {
         label: "ucwords()",
         detail: "String",
         type: "method",
@@ -891,7 +891,7 @@ This function returns the rest of the string from where it found the first occur
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function is binary-safe.`
     }),
     //? ------------------ vfprintf()
-    snip(`vfprintf($\{});$\{}`, {
+    window.cmSnip(`vfprintf($\{});$\{}`, {
         label: "vfprintf()",
         detail: "String",
         type: "method",
@@ -900,7 +900,7 @@ Unlike fprintf(), the arguments in vfprintf(), are placed in an array. The array
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If there are more % signs than arguments, you must use placeholders. A placeholder is inserted after the % sign, and consists of the argument-number and "\\$". See example two.`
     }),
     //? ------------------ vprintf()
-    snip(`vprintf($\{});$\{}`, {
+    window.cmSnip(`vprintf($\{});$\{}`, {
         label: "vprintf()",
         detail: "String",
         type: "method",
@@ -909,7 +909,7 @@ Unlike printf(), the arguments in vprintf(), are placed in an array. The array e
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If there are more % signs than arguments, you must use placeholders. A placeholder is inserted after the % sign, and consists of the argument-number and "\\$". See example two.`
     }),
     //? ------------------ vsprintf()
-    snip(`vsprintf($\{});$\{}`, {
+    window.cmSnip(`vsprintf($\{});$\{}`, {
         label: "vsprintf()",
         detail: "String",
         type: "method",
@@ -918,7 +918,7 @@ Unlike sprintf(), the arguments in vsprintf(), are placed in an array. The array
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If there are more % signs than arguments, you must use placeholders. A placeholder is inserted after the % sign, and consists of the argument-number and "\\$". See example two.`
     }),
     //? ------------------ wordwrap()
-    snip(`wordwrap($\{});$\{}`, {
+    window.cmSnip(`wordwrap($\{});$\{}`, {
         label: "wordwrap()",
         detail: "String",
         type: "method",

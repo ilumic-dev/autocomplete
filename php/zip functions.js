@@ -1,59 +1,59 @@
 window.phpIntellisense.zipFunctions = [
-    snip(`zip_close($\{zip});$\{}`, {
+    window.cmSnip(`zip_close($\{zip});$\{}`, {
         label: "zip_close()",
         detail: "Zip",
         type: "method",
         info: `The zip_close() function closes a ZIP file archive opened by the <code>zip_open()</code> function.`
     }),
-    snip(`zip_entry_close($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_close($\{zip_entry});$\{}`, {
         label: "zip_entry_close()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_close() function closes a ZIP directory entry opened by zip_entry_open().`
     }),
-    snip(`zip_entry_compressedsize($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_compressedsize($\{zip_entry});$\{}`, {
         label: "zip_entry_compressedsize()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_compressedsize() function returns the compressed file size of a ZIP directory entry.`
     }),
-    snip(`zip_entry_compressionmethod($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_compressionmethod($\{zip_entry});$\{}`, {
         label: "zip_entry_compressionmethod()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_compressionmethod() function returns the compression method of a ZIP directory entry.`
     }),
-    snip(`zip_entry_filesize($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_filesize($\{zip_entry});$\{}`, {
         label: "zip_entry_filesize()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_filesize() function returns the actual file size of a ZIP directory entry.`
     }),
-    snip(`zip_entry_name($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_name($\{zip_entry});$\{}`, {
         label: "zip_entry_name()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_name() function returns the name of a ZIP directory entry.`
     }),
-    snip(`zip_entry_open($\{zip_archive}, $\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_open($\{zip_archive}, $\{zip_entry});$\{}`, {
         label: "zip_entry_open()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_open() function opens a directory entry in a ZIP file for reading.`
     }),
-    snip(`zip_entry_read($\{zip_entry});$\{}`, {
+    window.cmSnip(`zip_entry_read($\{zip_entry});$\{}`, {
         label: "zip_entry_read()",
         detail: "Zip",
         type: "method",
         info: `The zip_entry_read() function reads from an open directory entry.`
     }),
-    snip(`zip_open($\{zip_archive});$\{}`, {
+    window.cmSnip(`zip_open($\{zip_archive});$\{}`, {
         label: "zip_open()",
         detail: "Zip",
         type: "method",
         info: `The zip_open() function opens a ZIP file archive.`
     }),
-    snip(`zip_read($\{zip_archive});$\{}`, {
+    window.cmSnip(`zip_read($\{zip_archive});$\{}`, {
         label: "zip_read()",
         detail: "Zip",
         type: "method",

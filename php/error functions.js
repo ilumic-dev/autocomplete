@@ -1,6 +1,6 @@
 window.phpIntellisense.errorFunctions = [
     //? ------------------ debug_backtrace()
-    snip(`debug_backtrace($\{start});$\{}`, {
+    window.cmSnip(`debug_backtrace($\{start});$\{}`, {
         label: "debug_backtrace()",
         detail: "Error",
         type: "method",
@@ -10,7 +10,7 @@ Returns an array of associative arrays.
 `
     }),
     //? ------------------ debug_print_backtrace()
-    snip(`debug_print_backtrace($\{start});$\{}`, {
+    window.cmSnip(`debug_print_backtrace($\{start});$\{}`, {
         label: "debug_print_backtrace()",
         detail: "Error",
         type: "method",
@@ -19,14 +19,14 @@ This function displays data from the code that led up to the debug_print_backtra
 `
     }),
     //? ------------------ error_clear_last()
-    snip(`error_clear_last();$\{}`, {
+    window.cmSnip(`error_clear_last();$\{}`, {
         label: "error_clear_last()",
         detail: "Error",
         type: "method",
         info: `The error_clear_last() function clears the last error`
     }),
     //? ------------------ error_get_last()
-    snip(`error_get_last();$\{}`, {
+    window.cmSnip(`error_get_last();$\{}`, {
         label: "error_get_last()",
         detail: "Error",
         type: "method",
@@ -42,7 +42,7 @@ The associative array contains four keys:<br><br>
 `
     }),
     //? ------------------ error_log()
-    snip(`error_log($\{message}, $\{message_type}, $\{destination}, $\{extra_headers});$\{}`, {
+    window.cmSnip(`error_log($\{message}, $\{message_type}, $\{destination}, $\{extra_headers});$\{}`, {
         label: "error_log()",
         detail: "Error",
         type: "method",
@@ -50,7 +50,7 @@ The associative array contains four keys:<br><br>
 `
     }),
     //? ------------------ error_reporting()
-    snip(`error_reporting($\{level});$\{}`, {
+    window.cmSnip(`error_reporting($\{level});$\{}`, {
         label: "error_reporting()",
         detail: "Error",
         type: "method",
@@ -59,7 +59,7 @@ PHP has many levels of errors, and using this function sets that level for the c
 `
     }),
     //? ------------------ restore_error_handler()
-    snip(`restore_error_handler();$\{}`, {
+    window.cmSnip(`restore_error_handler();$\{}`, {
         label: "restore_error_handler()",
         detail: "Error",
         type: "method",
@@ -71,7 +71,7 @@ a user-defined error handler function.
 `
     }),
     //? ------------------ restore_exception_handler()
-    snip(`restore_exception_handler();$\{}`, {
+    window.cmSnip(`restore_exception_handler();$\{}`, {
         label: "restore_exception_handler()",
         detail: "Error",
         type: "method",
@@ -83,7 +83,7 @@ a user-defined exception handler function.
 `
     }),
     //? ------------------ set_error_handler()
-    snip(`set_error_handler($\{error_handler});$\{}`, {
+    window.cmSnip(`set_error_handler($\{error_handler});$\{}`, {
         label: "set_error_handler()",
         detail: "Error",
         type: "method",
@@ -94,7 +94,7 @@ and the user-defined error handler must terminate the script, die(), if necessar
 `
     }),
     //? ------------------ set_exception_handler()
-    snip(`set_exception_handler($\{exception_handler});$\{}`, {
+    window.cmSnip(`set_exception_handler($\{exception_handler});$\{}`, {
         label: "set_exception_handler()",
         detail: "Error",
         type: "method",
@@ -103,7 +103,7 @@ The script will stop executing after the exception handler is called.
 `
     }),
     //? ------------------ trigger_error()
-    snip(`trigger_error($\{message}, $\{message_type});$\{}`, {
+    window.cmSnip(`trigger_error($\{message}, $\{message_type});$\{}`, {
         label: "trigger_error()",
         detail: "Error",
         type: "method",
@@ -114,7 +114,7 @@ set_error_handler() function.
 `
     }),
     //? ------------------ user_error()
-    snip(`user_error($\{message}, $\{message_type});$\{}`, {
+    window.cmSnip(`user_error($\{message}, $\{message_type});$\{}`, {
         label: "user_error()",
         detail: "Error",
         type: "method",

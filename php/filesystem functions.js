@@ -1,13 +1,13 @@
 window.phpIntellisense.filesystemFunctions = [
     //? ------------------ basename()
-    snip(`basename($\{path});$\{}`, {
+    window.cmSnip(`basename($\{path});$\{}`, {
         label: "basename()",
         detail: "Filesystem",
         type: "method",
         info: `The basename() function returns the filename from a path`
     }),
     //? ------------------ chgrp()
-    snip(`chgrp($\{filename}, $\{group});$\{}`, {
+    window.cmSnip(`chgrp($\{filename}, $\{group});$\{}`, {
         label: "chgrp()",
         detail: "Filesystem",
         type: "method",
@@ -16,14 +16,14 @@ window.phpIntellisense.filesystemFunctions = [
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function does not work on Windows platforms`
     }),
     //? ------------------ chmod()
-    snip(`chmod($\{filename}, $\{mode});$\{}`, {
+    window.cmSnip(`chmod($\{filename}, $\{mode});$\{}`, {
         label: "chmod()",
         detail: "Filesystem",
         type: "method",
         info: `The chmod() function changes permissions of the specified file`
     }),
     //? ------------------ chown()
-    snip(`chown($\{filename}, $\{user});$\{}`, {
+    window.cmSnip(`chown($\{filename}, $\{user});$\{}`, {
         label: "chown()",
         detail: "Filesystem",
         type: "method",
@@ -32,7 +32,7 @@ window.phpIntellisense.filesystemFunctions = [
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function does not work on Windows platforms`
     }),
     //? ------------------ clearstatcache()
-    snip(`clearstatcache($\{clear_realpath_cache});$\{}`, {
+    window.cmSnip(`clearstatcache($\{clear_realpath_cache});$\{}`, {
         label: "clearstatcache()",
         detail: "Filesystem",
         type: "method",
@@ -42,7 +42,7 @@ to be checked several times in a script, you probably want to avoid caching to g
 correct results. To do this, use the clearstatcache() function`
     }),
     //? ------------------ copy()
-    snip(`copy($\{source}, $\{destination});$\{}`, {
+    window.cmSnip(`copy($\{source}, $\{destination});$\{}`, {
         label: "copy()",
         detail: "Filesystem",
         type: "method",
@@ -50,7 +50,7 @@ correct results. To do this, use the clearstatcache() function`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If the <i>to_file</i> file already exists, it will be overwritten`
     }),
     //? ------------------ delete()
-    snip(`delete($\{filename});$\{}`, {
+    window.cmSnip(`delete($\{filename});$\{}`, {
         label: "delete()",
         detail: "Filesystem",
         type: "method",
@@ -59,14 +59,14 @@ If you need to delete a file, look at the
 unlink() function`
     }),
     //? ------------------ dirname()
-    snip(`dirname($\{path});$\{}`, {
+    window.cmSnip(`dirname($\{path});$\{}`, {
         label: "dirname()",
         detail: "Filesystem",
         type: "method",
         info: `The dirname() function returns the path of the parent directory`
     }),
     //? ------------------ disk_free_space()
-    snip(`disk_free_space($\{directory});$\{}`, {
+    window.cmSnip(`disk_free_space($\{directory});$\{}`, {
         label: "disk_free_space()",
         detail: "Filesystem",
         type: "method",
@@ -74,7 +74,7 @@ unlink() function`
 disk_free_space() function`
     }),
     //? ------------------ disk_total_space()
-    snip(`disk_total_space($\{directory});$\{}`, {
+    window.cmSnip(`disk_total_space($\{directory});$\{}`, {
         label: "disk_total_space()",
         detail: "Filesystem",
         type: "method",
@@ -82,7 +82,7 @@ disk_free_space() function`
 disk_total_space() function`
     }),
     //? ------------------ diskfreespace()
-    snip(`diskfreespace($\{directory});$\{}`, {
+    window.cmSnip(`diskfreespace($\{directory});$\{}`, {
         label: "diskfreespace()",
         detail: "Filesystem",
         type: "method",
@@ -90,7 +90,7 @@ disk_total_space() function`
 disk_free_space() function`
     }),
     //? ------------------ fclose()
-    snip(`fclose($\{handle});$\{}`, {
+    window.cmSnip(`fclose($\{handle});$\{}`, {
         label: "fclose()",
         detail: "Filesystem",
         type: "method",
@@ -98,7 +98,7 @@ disk_free_space() function`
 Note: The file must have been opened by fopen() or fsockopen()`
     }),
     //? ------------------ feof()
-    snip(`feof($\{handle});$\{}`, {
+    window.cmSnip(`feof($\{handle});$\{}`, {
         label: "feof()",
         detail: "Filesystem",
         type: "method",
@@ -107,14 +107,14 @@ for an open file.<br><br>
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> This function is useful for looping through data of unknown length`
     }),
     //? ------------------ fflush()
-    snip(`fflush($\{handle});$\{}`, {
+    window.cmSnip(`fflush($\{handle});$\{}`, {
         label: "fflush()",
         detail: "Filesystem",
         type: "method",
         info: `The fflush() function writes all buffered output to an open file`
     }),
     //? ------------------ fgetc()
-    snip(`fgetc($\{handle});$\{}`, {
+    window.cmSnip(`fgetc($\{handle});$\{}`, {
         label: "fgetc()",
         detail: "Filesystem",
         type: "method",
@@ -125,7 +125,7 @@ fgets() to read
 data one line at a time and then process the line one single character at a time with fgetc()`
     }),
     //? ------------------ fgetcsv()
-    snip(`fgetcsv($\{handle}, $\{length}, $\{delimiter}, $\{enclosure});$\{}`, {
+    window.cmSnip(`fgetcsv($\{handle}, $\{length}, $\{delimiter}, $\{enclosure});$\{}`, {
         label: "fgetcsv()",
         detail: "Filesystem",
         type: "method",
@@ -133,14 +133,14 @@ data one line at a time and then process the line one single character at a time
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> Also see the fputcsv() function`
     }),
     //? ------------------ fgets()
-    snip(`fgets($\{handle});$\{}`, {
+    window.cmSnip(`fgets($\{handle});$\{}`, {
         label: "fgets()",
         detail: "Filesystem",
         type: "method",
         info: `The fgets() function returns a line from an open file`
     }),
     //? ------------------ fgetss()
-    snip(`fgetss($\{handle}, $\{length}, $\{allowable_tags});$\{}`, {
+    window.cmSnip(`fgetss($\{handle}, $\{length}, $\{allowable_tags});$\{}`, {
         label: "fgetss()",
         detail: "Filesystem",
         type: "method",
@@ -148,7 +148,7 @@ data one line at a time and then process the line one single character at a time
 <div style="width: 100%; background-color: var(--palette-red); border-radius: 4px; padding: 16px;"> <b style="color: var(--ui-base)">WARNING</b><br> <font style="color: var(--ui-base)">The fgetss() function is deprecated from PHP 7.3.</font> </div>`
     }),
     //? ------------------ file()
-    snip(`file($\{filename});$\{}`, {
+    window.cmSnip(`file($\{filename});$\{}`, {
         label: "file()",
         detail: "Filesystem",
         type: "method",
@@ -156,7 +156,7 @@ data one line at a time and then process the line one single character at a time
 Each array element contains a line from the file, with the newline character still attached`
     }),
     //? ------------------ file_exists()
-    snip(`file_exists($\{filename});$\{}`, {
+    window.cmSnip(`file_exists($\{filename});$\{}`, {
         label: "file_exists()",
         detail: "Filesystem",
         type: "method",
@@ -166,7 +166,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ file_get_contents()
-    snip(`file_get_contents($\{filename});$\{}`, {
+    window.cmSnip(`file_get_contents($\{filename});$\{}`, {
         label: "file_get_contents()",
         detail: "Filesystem",
         type: "method",
@@ -175,7 +175,7 @@ This function is the preferred way to read the contents of a file into
 a string. It will use memory mapping techniques, if this is supported by the server, to enhance performance`
     }),
     //? ------------------ file_put_contents()
-    snip(`file_put_contents($\{filename}, $\{data});$\{}`, {
+    window.cmSnip(`file_put_contents($\{filename}, $\{data});$\{}`, {
         label: "file_put_contents()",
         detail: "Filesystem",
         type: "method",
@@ -193,7 +193,7 @@ This function follows these rules when accessing a file:
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> Use FILE_APPEND to avoid deleting the existing content of the file`
     }),
     //? ------------------ fileatime()
-    snip(`fileatime($\{filename});$\{}`, {
+    window.cmSnip(`fileatime($\{filename});$\{}`, {
         label: "fileatime()",
         detail: "Filesystem",
         type: "method",
@@ -207,7 +207,7 @@ large number of files or directories. Some Unix systems have access time updates
 to increase performance. In this case this function is useless`
     }),
     //? ------------------ filectime()
-    snip(`filectime($\{filename});$\{}`, {
+    window.cmSnip(`filectime($\{filename});$\{}`, {
         label: "filectime()",
         detail: "Filesystem",
         type: "method",
@@ -221,7 +221,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ filegroup()
-    snip(`filegroup($\{filename});$\{}`, {
+    window.cmSnip(`filegroup($\{filename});$\{}`, {
         label: "filegroup()",
         detail: "Filesystem",
         type: "method",
@@ -231,7 +231,7 @@ clear the cache`
 clearstatcache() to clear the cache`
     }),
     //? ------------------ fileinode()
-    snip(`fileinode($\{filename});$\{}`, {
+    window.cmSnip(`fileinode($\{filename});$\{}`, {
         label: "fileinode()",
         detail: "Filesystem",
         type: "method",
@@ -241,7 +241,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ filemtime()
-    snip(`filemtime($\{filename});$\{}`, {
+    window.cmSnip(`filemtime($\{filename});$\{}`, {
         label: "filemtime()",
         detail: "Filesystem",
         type: "method",
@@ -253,7 +253,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ fileowner()
-    snip(`fileowner($\{filename});$\{}`, {
+    window.cmSnip(`fileowner($\{filename});$\{}`, {
         label: "fileowner()",
         detail: "Filesystem",
         type: "method",
@@ -263,7 +263,7 @@ clear the cache`
 clearstatcache() to clear the cache`
     }),
     //? ------------------ fileperms()
-    snip(`fileperms($\{filename});$\{}`, {
+    window.cmSnip(`fileperms($\{filename});$\{}`, {
         label: "fileperms()",
         detail: "Filesystem",
         type: "method",
@@ -272,7 +272,7 @@ clearstatcache() to clear the cache`
 clearstatcache() to clear the cache`
     }),
     //? ------------------ filesize()
-    snip(`filesize($\{filename});$\{}`, {
+    window.cmSnip(`filesize($\{filename});$\{}`, {
         label: "filesize()",
         detail: "Filesystem",
         type: "method",
@@ -281,7 +281,7 @@ clearstatcache() to clear the cache`
 clearstatcache() to clear the cache`
     }),
     //? ------------------ filetype()
-    snip(`filetype($\{filename});$\{}`, {
+    window.cmSnip(`filetype($\{filename});$\{}`, {
         label: "filetype()",
         detail: "Filesystem",
         type: "method",
@@ -301,14 +301,14 @@ Possible return values:<br><br>
 clearstatcache() to clear the cache`
     }),
     //? ------------------ flock()
-    snip(`flock($\{handle}, $\{operation});$\{}`, {
+    window.cmSnip(`flock($\{handle}, $\{operation});$\{}`, {
         label: "flock()",
         detail: "Filesystem",
         type: "method",
         info: `The flock() function locks and releases a file`
     }),
     //? ------------------ fnmatch()
-    snip(`fnmatch($\{pattern}, $\{string});$\{}`, {
+    window.cmSnip(`fnmatch($\{pattern}, $\{string});$\{}`, {
         label: "fnmatch()",
         detail: "Filesystem",
         type: "method",
@@ -316,7 +316,7 @@ clearstatcache() to clear the cache`
 wildcard pattern`
     }),
     //? ------------------ fopen()
-    snip(`fopen($\{filename}, $\{mode});$\{}`, {
+    window.cmSnip(`fopen($\{filename}, $\{mode});$\{}`, {
         label: "fopen()",
         detail: "Filesystem",
         type: "method",
@@ -329,7 +329,7 @@ You can also use 'b' to force binary mode. To use
 these flags, specify either 'b' or 't' as the last character of the mode parameter`
     }),
     //? ------------------ fpassthru()
-    snip(`fpassthru($\{handle});$\{}`, {
+    window.cmSnip(`fpassthru($\{handle});$\{}`, {
         label: "fpassthru()",
         detail: "Filesystem",
         type: "method",
@@ -343,7 +343,7 @@ the file if you have already written to the file.<br><br>
 readfile() function instead`
     }),
     //? ------------------ fputcsv()
-    snip(`fputcsv($\{handle}, $\{fields}, $\{delimiter}, $\{enclosure});$\{}`, {
+    window.cmSnip(`fputcsv($\{handle}, $\{fields}, $\{delimiter}, $\{enclosure});$\{}`, {
         label: "fputcsv()",
         detail: "Filesystem",
         type: "method",
@@ -351,14 +351,14 @@ readfile() function instead`
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> Also see the fgetcsv() function`
     }),
     //? ------------------ fputs()
-    snip(`fputs($\{handle}, $\{string});$\{}`, {
+    window.cmSnip(`fputs($\{handle}, $\{string});$\{}`, {
         label: "fputs()",
         detail: "Filesystem",
         type: "method",
         info: `The fputs() function is an alias of the fwrite() function`
     }),
     //? ------------------ fread()
-    snip(`fread($\{handle}, $\{length});$\{}`, {
+    window.cmSnip(`fread($\{handle}, $\{length});$\{}`, {
         label: "fread()",
         detail: "Filesystem",
         type: "method",
@@ -366,7 +366,7 @@ readfile() function instead`
 The function will stop at the end of the file or when it reaches the specified length, whichever comes first`
     }),
     //? ------------------ fscanf()
-    snip(`fscanf($\{});$\{}`, {
+    window.cmSnip(`fscanf($\{});$\{}`, {
         label: "fscanf()",
         detail: "Filesystem",
         type: "method",
@@ -376,7 +376,7 @@ stream. This means that a tab (\t) in the format string can match a single space
 character in the input stream`
     }),
     //? ------------------ fseek()
-    snip(`fseek($\{handle}, $\{offset}, $\{whence});$\{}`, {
+    window.cmSnip(`fseek($\{handle}, $\{offset}, $\{whence});$\{}`, {
         label: "fseek()",
         detail: "Filesystem",
         type: "method",
@@ -386,7 +386,7 @@ position, forward or backward, specified by the number of bytes.<br><br>
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> You can find the current position by using ftell()`
     }),
     //? ------------------ fstat()
-    snip(`fstat($\{handle});$\{}`, {
+    window.cmSnip(`fstat($\{handle});$\{}`, {
         label: "fstat()",
         detail: "Filesystem",
         type: "method",
@@ -397,21 +397,21 @@ may contain the number index, the name index, or both.<br><br>
 clearstatcache() to clear the cache`
     }),
     //? ------------------ ftell()
-    snip(`ftell($\{handle});$\{}`, {
+    window.cmSnip(`ftell($\{handle});$\{}`, {
         label: "ftell()",
         detail: "Filesystem",
         type: "method",
         info: `The ftell() function returns the current position of the read/write pointer in an open file`
     }),
     //? ------------------ ftruncate()
-    snip(`ftruncate($\{handle}, $\{size});$\{}`, {
+    window.cmSnip(`ftruncate($\{handle}, $\{size});$\{}`, {
         label: "ftruncate()",
         detail: "Filesystem",
         type: "method",
         info: `The ftruncate() function truncates an open file to the specified length`
     }),
     //? ------------------ fwrite()
-    snip(`fwrite($\{handle}, $\{string}, $\{length});$\{}`, {
+    window.cmSnip(`fwrite($\{handle}, $\{string}, $\{length});$\{}`, {
         label: "fwrite()",
         detail: "Filesystem",
         type: "method",
@@ -419,14 +419,14 @@ clearstatcache() to clear the cache`
 The function will stop at the end of the file (EOF) or when it reaches the specified length, whichever comes first`
     }),
     //? ------------------ glob()
-    snip(`glob($\{pattern}, $\{flags});$\{}`, {
+    window.cmSnip(`glob($\{pattern}, $\{flags});$\{}`, {
         label: "glob()",
         detail: "Filesystem",
         type: "method",
         info: `The glob() function returns an array of filenames or directories matching a specified pattern`
     }),
     //? ------------------ is_dir()
-    snip(`is_dir($\{filename});$\{}`, {
+    window.cmSnip(`is_dir($\{filename});$\{}`, {
         label: "is_dir()",
         detail: "Filesystem",
         type: "method",
@@ -435,7 +435,7 @@ The function will stop at the end of the file (EOF) or when it reaches the speci
 clearstatcache() to clear the cache`
     }),
     //? ------------------ is_executable()
-    snip(`is_executable($\{filename});$\{}`, {
+    window.cmSnip(`is_executable($\{filename});$\{}`, {
         label: "is_executable()",
         detail: "Filesystem",
         type: "method",
@@ -445,7 +445,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ is_file()
-    snip(`is_file($\{filename});$\{}`, {
+    window.cmSnip(`is_file($\{filename});$\{}`, {
         label: "is_file()",
         detail: "Filesystem",
         type: "method",
@@ -455,7 +455,7 @@ clearstatcache() to clear the cache.
 `
     }),
     //? ------------------ is_link()
-    snip(`is_link($\{filename});$\{}`, {
+    window.cmSnip(`is_link($\{filename});$\{}`, {
         label: "is_link()",
         detail: "Filesystem",
         type: "method",
@@ -464,7 +464,7 @@ clearstatcache() to clear the cache.
 clearstatcache() to clear the cache`
     }),
     //? ------------------ is_readable()
-    snip(`is_readable($\{filename});$\{}`, {
+    window.cmSnip(`is_readable($\{filename});$\{}`, {
         label: "is_readable()",
         detail: "Filesystem",
         type: "method",
@@ -474,7 +474,7 @@ clearstatcache() to
 clear the cache`
     }),
     //? ------------------ is_writable()
-    snip(`is_writable($\{filename});$\{}`, {
+    window.cmSnip(`is_writable($\{filename});$\{}`, {
         label: "is_writable()",
         detail: "Filesystem",
         type: "method",
@@ -482,7 +482,7 @@ clear the cache`
 is_writable() function`
     }),
     //? ------------------ is_writeable()
-    snip(`is_writeable($\{filename});$\{}`, {
+    window.cmSnip(`is_writeable($\{filename});$\{}`, {
         label: "is_writeable()",
         detail: "Filesystem",
         type: "method",
@@ -490,7 +490,7 @@ is_writable() function`
 is_writable() function`
     }),
     //? ------------------ lchgrp()
-    snip(`lchgrp($\{filename}, $\{group});$\{}`, {
+    window.cmSnip(`lchgrp($\{filename}, $\{group});$\{}`, {
         label: "lchgrp()",
         detail: "Filesystem",
         type: "method",
@@ -499,7 +499,7 @@ is_writable() function`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function does not work on Windows platforms`
     }),
     //? ------------------ lchown()
-    snip(`lchown($\{filename}, $\{user});$\{}`, {
+    window.cmSnip(`lchown($\{filename}, $\{user});$\{}`, {
         label: "lchown()",
         detail: "Filesystem",
         type: "method",
@@ -508,14 +508,14 @@ is_writable() function`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> This function does not work on Windows platforms`
     }),
     //? ------------------ link()
-    snip(`link($\{target}, $\{link});$\{}`, {
+    window.cmSnip(`link($\{target}, $\{link});$\{}`, {
         label: "link()",
         detail: "Filesystem",
         type: "method",
         info: `The link() function creates a hard link`
     }),
     //? ------------------ linkinfo()
-    snip(`linkinfo($\{filename});$\{}`, {
+    window.cmSnip(`linkinfo($\{filename});$\{}`, {
         label: "linkinfo()",
         detail: "Filesystem",
         type: "method",
@@ -523,7 +523,7 @@ is_writable() function`
 verify if a link really exists`
     }),
     //? ------------------ lstat()
-    snip(`lstat($\{filename});$\{}`, {
+    window.cmSnip(`lstat($\{filename});$\{}`, {
         label: "lstat()",
         detail: "Filesystem",
         type: "method",
@@ -534,14 +534,14 @@ may contain the number index, the name index, or both.<br><br>
 clearstatcache() to clear the cache`
     }),
     //? ------------------ mkdir()
-    snip(`mkdir($\{directory}, $\{mode}, $\{recursive});$\{}`, {
+    window.cmSnip(`mkdir($\{directory}, $\{mode}, $\{recursive});$\{}`, {
         label: "mkdir()",
         detail: "Filesystem",
         type: "method",
         info: `The mkdir() function creates a directory specified by a pathname`
     }),
     //? ------------------ move_uploaded_file()
-    snip(`move_uploaded_file($\{path}, $\{destination});$\{}`, {
+    window.cmSnip(`move_uploaded_file($\{path}, $\{destination});$\{}`, {
         label: "move_uploaded_file()",
         detail: "Filesystem",
         type: "method",
@@ -550,7 +550,7 @@ clearstatcache() to clear the cache`
 <b class="info-note"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg><span>Note:</span></b> If the destination file already exists, it will be overwritten`
     }),
     //? ------------------ parse_ini_file()
-    snip(`parse_ini_file($\{filename}, $\{process_sections}, $\{scanner_mode});$\{}`, {
+    window.cmSnip(`parse_ini_file($\{filename}, $\{process_sections}, $\{scanner_mode});$\{}`, {
         label: "parse_ini_file()",
         detail: "Filesystem",
         type: "method",
@@ -564,7 +564,7 @@ characters must not be used in the key: {}|<span>&</span>~!()^"
 `
     }),
     //? ------------------ parse_ini_string()
-    snip(`parse_ini_string($\{ini_string}, $\{process_sections}, $\{scanner_mode});$\{}`, {
+    window.cmSnip(`parse_ini_string($\{ini_string}, $\{process_sections}, $\{scanner_mode});$\{}`, {
         label: "parse_ini_string()",
         detail: "Filesystem",
         type: "method",
@@ -576,14 +576,14 @@ configuration files, and has nothing to do with the php.ini file.<br><br>
 `
     }),
     //? ------------------ pathinfo()
-    snip(`pathinfo($\{path}, $\{options});$\{}`, {
+    window.cmSnip(`pathinfo($\{path}, $\{options});$\{}`, {
         label: "pathinfo()",
         detail: "Filesystem",
         type: "method",
         info: `The pathinfo() function returns information about a file path`
     }),
     //? ------------------ pclose()
-    snip(`pclose($\{handle});$\{}`, {
+    window.cmSnip(`pclose($\{handle});$\{}`, {
         label: "pclose()",
         detail: "Filesystem",
         type: "method",
@@ -592,14 +592,14 @@ popen()<
 `
     }),
     //? ------------------ popen()
-    snip(`popen($\{command}, $\{mode});$\{}`, {
+    window.cmSnip(`popen($\{command}, $\{mode});$\{}`, {
         label: "popen()",
         detail: "Filesystem",
         type: "method",
         info: `The popen() function opens a pipe to the program specified in the command parameter`
     }),
     //? ------------------ readfile()
-    snip(`readfile($\{filename}, $\{use_include_path}, $\{context});$\{}`, {
+    window.cmSnip(`readfile($\{filename}, $\{use_include_path}, $\{context});$\{}`, {
         label: "readfile()",
         detail: "Filesystem",
         type: "method",
@@ -609,14 +609,14 @@ wrappers have been enabled in the php.ini file
 `
     }),
     //? ------------------ readlink()
-    snip(`readlink($\{path});$\{}`, {
+    window.cmSnip(`readlink($\{path});$\{}`, {
         label: "readlink()",
         detail: "Filesystem",
         type: "method",
         info: `The readlink() function returns the target of a symbolic link`
     }),
     //? ------------------ realpath()
-    snip(`realpath($\{path});$\{}`, {
+    window.cmSnip(`realpath($\{path});$\{}`, {
         label: "realpath()",
         detail: "Filesystem",
         type: "method",
@@ -625,42 +625,42 @@ This function removes all symbolic links (like '/./', '/../' and extra '/')
 and returns the absolute pathname`
     }),
     //? ------------------ realpath_cache_get()
-    snip(`realpath_cache_get();$\{}`, {
+    window.cmSnip(`realpath_cache_get();$\{}`, {
         label: "realpath_cache_get()",
         detail: "Filesystem",
         type: "method",
         info: `The realpath_cache_get() function returns realpath cache entries`
     }),
     //? ------------------ realpath_cache_size()
-    snip(`realpath_cache_size();$\{}`, {
+    window.cmSnip(`realpath_cache_size();$\{}`, {
         label: "realpath_cache_size()",
         detail: "Filesystem",
         type: "method",
         info: `The realpath_cache_size() function returns realpath cache size`
     }),
     //? ------------------ rename()
-    snip(`rename($\{oldname}, $\{newname}, $\{context});$\{}`, {
+    window.cmSnip(`rename($\{oldname}, $\{newname}, $\{context});$\{}`, {
         label: "rename()",
         detail: "Filesystem",
         type: "method",
         info: `The rename() function renames a file or directory`
     }),
     //? ------------------ rewind()
-    snip(`rewind($\{handle});$\{}`, {
+    window.cmSnip(`rewind($\{handle});$\{}`, {
         label: "rewind()",
         detail: "Filesystem",
         type: "method",
         info: `The rewind() function "rewinds" the position of the file pointer to the beginning of the file`
     }),
     //? ------------------ rmdir()
-    snip(`rmdir($\{dirname}, $\{context});$\{}`, {
+    window.cmSnip(`rmdir($\{dirname}, $\{context});$\{}`, {
         label: "rmdir()",
         detail: "Filesystem",
         type: "method",
         info: `The rmdir() function removes an empty directory`
     }),
     //? ------------------ set_file_buffer()
-    snip(`set_file_buffer($\{handle}, $\{buffersize});$\{}`, {
+    window.cmSnip(`set_file_buffer($\{handle}, $\{buffersize});$\{}`, {
         label: "set_file_buffer()",
         detail: "Filesystem",
         type: "method",
@@ -675,7 +675,7 @@ processes to write).<br><br>
 `
     }),
     //? ------------------ stat()
-    snip(`stat($\{filename});$\{}`, {
+    window.cmSnip(`stat($\{filename});$\{}`, {
         label: "stat()",
         detail: "Filesystem",
         type: "method",
@@ -686,7 +686,7 @@ may contain the number index, the name index, or both.<br><br>
 clearstatcache() to clear the cache`
     }),
     //? ------------------ symlink()
-    snip(`symlink($\{target}, $\{link}, $\{context});$\{}`, {
+    window.cmSnip(`symlink($\{target}, $\{link}, $\{context});$\{}`, {
         label: "symlink()",
         detail: "Filesystem",
         type: "method",
@@ -695,7 +695,7 @@ clearstatcache() to clear the cache`
 `
     }),
     //? ------------------ tempnam()
-    snip(`tempnam($\{directory}, $\{prefix});$\{}`, {
+    window.cmSnip(`tempnam($\{directory}, $\{prefix});$\{}`, {
         label: "tempnam()",
         detail: "Filesystem",
         type: "method",
@@ -705,7 +705,7 @@ clearstatcache() to clear the cache`
 function`
     }),
     //? ------------------ tmpfile()
-    snip(`tmpfile();$\{}`, {
+    window.cmSnip(`tmpfile();$\{}`, {
         label: "tmpfile()",
         detail: "Filesystem",
         type: "method",
@@ -715,7 +715,7 @@ function`
 function`
     }),
     //? ------------------ touch()
-    snip(`touch($\{filename}, $\{time}, $\{atime});$\{}`, {
+    window.cmSnip(`touch($\{filename}, $\{time}, $\{atime});$\{}`, {
         label: "touch()",
         detail: "Filesystem",
         type: "method",
@@ -724,7 +724,7 @@ function`
 `
     }),
     //? ------------------ umask()
-    snip(`umask($\{mask});$\{}`, {
+    window.cmSnip(`umask($\{mask});$\{}`, {
         label: "umask()",
         detail: "Filesystem",
         type: "method",
@@ -733,7 +733,7 @@ This function sets PHP's umask to <i>mask</i> <span>&</span> 0777 and returns th
 umask`
     }),
     //? ------------------ unlink()
-    snip(`unlink($\{filename}, $\{context});$\{}`, {
+    window.cmSnip(`unlink($\{filename}, $\{context});$\{}`, {
         label: "unlink()",
         detail: "Filesystem",
         type: "method",
