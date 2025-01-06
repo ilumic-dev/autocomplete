@@ -9,22 +9,31 @@ window.phpIntellisense.isCursorInPHP = function (code, cursorPosition) {
     absolutePosition += column;
 
     const phpRegex = /<\?(?:php)?|\?>/g;
-    let match;
     const phpBlocks = [];
+    let match;
 
     while ((match = phpRegex.exec(code)) !== null) {
         if (match[0] === '<?php' || match[0] === '<?') {
-            phpBlocks.push({ start: match.index });
-        } else if (match[0] === '?>' && phpBlocks.length > 0) {
-            phpBlocks[phpBlocks.length - 1].end = match.index;
+            phpBlocks.push({ start: match.index, end: null });
+        } else if (match[0] === '?>') {
+            const lastBlock = phpBlocks[phpBlocks.length - 1];
+            if (lastBlock && lastBlock.end === null) {
+                lastBlock.end = match.index;
+            }
         }
     }
 
     phpBlocks.forEach(block => {
-        if (block.end === undefined) {
-            block.end = code.length;
+        if (block.end === null) {
+            block.end = code.length + 1;
         }
     });
 
-    return phpBlocks.some(block => block.start <= absolutePosition && absolutePosition < block.end);
+    for (const block of phpBlocks) {
+        if (block.start <= absolutePosition && absolutePosition <= block.end) {
+            return true;
+        }
+    }
+
+    return false;
 };
