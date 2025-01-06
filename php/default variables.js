@@ -1,4 +1,4 @@
-const defaultVariables = [
+globalThis.defaultVariables = [
     {
         label: "_POST",
         info: "$_POST: <code>array</code>",

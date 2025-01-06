@@ -1,4 +1,4 @@
-const arrayFunctions = [
+globalThis.arrayFunctions = [
 
     //! ------------------ each()
     snip(`each($\{});$\{}`, {

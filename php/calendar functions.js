@@ -1,4 +1,4 @@
-const calendarFunctions = [
+globalThis.calendarFunctions = [
     //? ------------------ cal_days_in_month()
     snip(`cal_days_in_month($\{calendar}, $\{month}, $\{year});$\{}`, {
         label: "cal_days_in_month()",

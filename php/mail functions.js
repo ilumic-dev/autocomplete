@@ -1,4 +1,4 @@
-const mailFunctions = [
+globalThis.mailFunctions = [
     snip(`mail($\{});$\{}`, {
         label: "mail()",
         detail: "Mail",

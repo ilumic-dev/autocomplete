@@ -1,4 +1,4 @@
-const phpSnippets = [
+globalThis.phpSnippets = [
     snip(`header('Content-Type: application/json; charset=utf-8');$\{}`, {
         label: "header:json",
         type: "snippet"

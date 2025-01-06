@@ -1,4 +1,4 @@
-const errorFunctions = [
+globalThis.errorFunctions = [
     //? ------------------ debug_backtrace()
     snip(`debug_backtrace($\{start});$\{}`, {
         label: "debug_backtrace()",

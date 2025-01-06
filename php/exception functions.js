@@ -1,4 +1,4 @@
-const exceptionFunctions = [
+globalThis.exceptionFunctions = [
     //? ------------------ Exception()
     snip(`Exception($\{})$\{}`, {
         label: "Exception()",

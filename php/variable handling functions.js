@@ -1,4 +1,4 @@
-const variableHandlingFunctions = [
+globalThis.variableHandlingFunctions = [
     snip(`boolval($\{mixed});$\{}`, {
         label: "boolval()",
         type: "method",

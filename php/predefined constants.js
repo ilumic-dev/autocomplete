@@ -1,4 +1,4 @@
-const predefinedConstants = [
+globalThis.predefinedConstants = [
     {
         label: "CAL_GREGORIAN",
         info: "CAL_GREGORIAN: <code>Integer</code>",

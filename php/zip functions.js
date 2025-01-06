@@ -1,4 +1,4 @@
-const zipFunctions = [
+globalThis.zipFunctions = [
     snip(`zip_close($\{zip});$\{}`, {
         label: "zip_close()",
         detail: "Zip",

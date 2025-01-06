@@ -1,4 +1,4 @@
-const libxmlFunctions = [
+globalThis.libxmlFunctions = [
     snip(`libxml_clear_errors();$\{}`, {
         label: "libxml_clear_errors()",
         detail: "LibXML",

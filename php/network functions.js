@@ -1,4 +1,4 @@
-const networkFunctions = [
+globalThis.networkFunctions = [
     snip(`checkdnsrr($\{});$\{}`, {
         label: "checkdnsrr()",
         detail: "Network",

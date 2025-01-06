@@ -1,4 +1,4 @@
-const mysqliFunctions = [
+globalThis.mysqliFunctions = [
     snip(`mysqli_affected_rows($\{});$\{}`, {
         label: "mysqli_affected_rows()",
         detail: "MySQLi",

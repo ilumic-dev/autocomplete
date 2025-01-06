@@ -1,4 +1,4 @@
-const directoryFunctions = [
+globalThis.directoryFunctions = [
     //? ------------------ chdir()
     snip(`chdir($\{directory});$\{}`, {
         label: "chdir()",

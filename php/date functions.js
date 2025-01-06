@@ -1,4 +1,4 @@
-const dateFunctions = [
+globalThis.dateFunctions = [
     //? ------------------ checkdate()
     snip(`checkdate($\{month}, $\{day}, $\{year});$\{}`, {
         label: "checkdate()",

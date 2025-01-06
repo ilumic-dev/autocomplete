@@ -1,4 +1,4 @@
-const outputControlFunctions = [
+globalThis.outputControlFunctions = [
     snip(`flush();$\{}`, {
         label: "flush()",
         detail: "Output Control",

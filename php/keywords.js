@@ -1,4 +1,4 @@
-const keywords = [
+globalThis.keywords = [
     //? ------------------ echo
     snip(`echo "$\{}";$\{}`, {
         label: "echo",
@@ -96,7 +96,7 @@ In the <code>switch</code> block, all the code following a case statement will b
 If any of the properties was a reference to another variable or object, then only the reference is copied. Objects are always passed by reference, so if the original object has another object in its properties, the copy will point to the same object. This behavior can be changed by creating a <code>__clone()</code> method in the class.`
     }),
     //? ------------------ const
-    snip(`const $\{} = $\{};$\{}`, {
+    snip(`globalThis.$\{} = $\{};$\{}`, {
         label: "const",
         type: "keyword",
         info: `The <code>const</code> keyword is used to create constants. Unlike with the <code>define()</code> function, constants created using the <code>const</code> keyword must be declared in the global scope.`

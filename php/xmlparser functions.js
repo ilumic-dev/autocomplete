@@ -1,4 +1,4 @@
-const xmlParserFunctions = [
+globalThis.xmlParserFunctions = [
     snip(`utf8_decode($\{string});$\{}`, {
         label: "utf8_decode()",
         detail: "XML Parser",

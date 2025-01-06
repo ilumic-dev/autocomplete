@@ -1,4 +1,4 @@
-const mathFunctions = [
+globalThis.mathFunctions = [
     snip(`abs($\{});$\{}`, {
         label: "abs()",
         detail: "Math",

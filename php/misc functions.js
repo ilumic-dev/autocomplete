@@ -1,4 +1,4 @@
-const miscFunctions = [
+globalThis.miscFunctions = [
     //? ------------------ connection_aborted()
     snip(`connection_aborted();$\{}`, {
         label: "connection_aborted()",

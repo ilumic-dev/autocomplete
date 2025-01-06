@@ -1,4 +1,4 @@
-const curlFunctions = [
+globalThis.curlFunctions = [
     snip(`curl_close($\{curl});$\{}`, {
         label: "curl_close()",
         detail: "Curl",

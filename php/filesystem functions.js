@@ -1,4 +1,4 @@
-const filesystemFunctions = [
+globalThis.filesystemFunctions = [
     //? ------------------ basename()
     snip(`basename($\{path});$\{}`, {
         label: "basename()",
