@@ -1,9 +1,7 @@
 window.phpIntellisense.isCursorInPHP = function (code, cursorPosition) {
-    const line = cursorPosition.line;
-    const column = cursorPosition.column;
+    const { line, column } = cursorPosition;
 
     const lines = code.split("\n");
-
     let absolutePosition = 0;
     for (let i = 0; i < line - 1; i++) {
         absolutePosition += lines[i].length + 1;
@@ -22,18 +20,11 @@ window.phpIntellisense.isCursorInPHP = function (code, cursorPosition) {
         }
     }
 
-    // Si hay bloques sin cerrar, considera que se extienden hasta el final del código
-    for (const block of phpBlocks) {
+    phpBlocks.forEach(block => {
         if (block.end === undefined) {
             block.end = code.length;
         }
-    }
+    });
 
-    for (const block of phpBlocks) {
-        if (block.start <= absolutePosition && absolutePosition < block.end) {
-            return true;
-        }
-    }
-
-    return false;
+    return phpBlocks.some(block => block.start <= absolutePosition && absolutePosition < block.end);
 };
