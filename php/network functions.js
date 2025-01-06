@@ -204,5 +204,3 @@ const networkFunctions = [
         info: `The syslog() function generates a system log message.`
     }),
 ];
-
-export default networkFunctions;

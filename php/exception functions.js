@@ -50,5 +50,3 @@ Stack traces contain information about all of the functions that are running at 
 Stack traces contain information about all of the functions that are running at a given moment. The stack trace provided by this method has information about the stack at the time that the exception was thrown.`
     }),
 ]
-
-export default exceptionFunctions;

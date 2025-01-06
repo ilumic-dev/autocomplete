@@ -408,5 +408,3 @@ the Unix Epoch (January 1 1970 00:00:00 GMT).`
         info: `The timezone_version_get() function returns the version of the timezonedb.`
     }),
 ]
-
-export default dateFunctions;

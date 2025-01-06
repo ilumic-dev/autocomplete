@@ -61,22 +61,3 @@ const zipFunctions = [
 <b class="info-tip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"/><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"/><path d="M9.7 17l4.6 0"/></svg><span>Tip:</span></b> The resource returned by zip_read() can be used by the zip_entry_*() functions.`
     })
 ];
-
-export default zipFunctions;
-
-/*
-
-?   Function 	Description
-    zip_close() 	Closes a ZIP file archive
-    zip_entry_close() 	Closes a ZIP directory entry
-    zip_entry_compressedsize() 	Returns the compressed file size of a ZIP directory entry
-    zip_entry_compressionmethod() 	Returns the compression method of a ZIP directory entry
-    zip_entry_filesize() 	Returns the actual file size of a ZIP directory entry
-    zip_entry_name() 	Returns the name of a ZIP directory entry
-    zip_entry_open() 	Opens a directory entry in a ZIP file for reading
-    zip_entry_read() 	Reads from an open directory entry in the ZIP file
-    zip_open() 	Opens a ZIP file archive
-    zip_read() 	Reads the next file in a open ZIP file archive
-
-
- */

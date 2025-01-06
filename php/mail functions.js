@@ -13,5 +13,3 @@ const mailFunctions = [
 This function accepts an email address, for which it calculates an integer hash value. This value is compatible with the EZMLM mailing list manager, and can then be used with the EZMLM database for user management.`
     })
 ];
-
-export default mailFunctions;

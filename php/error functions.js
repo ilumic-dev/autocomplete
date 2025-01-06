@@ -125,5 +125,3 @@ set_error_handler() function.
 `
     }),
 ];
-
-export default errorFunctions;

@@ -259,5 +259,3 @@ When the connection is open, you can run FTP functions against the server.<br><b
         info: `The ftp_systype() function returns the system type identifier of the FTP server.`
     }),
 ];
-
-export default ftpFunctions;

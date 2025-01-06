@@ -492,5 +492,3 @@ const mysqliFunctions = [
         info: `The mysqli_get_links_stats() function returns statistics about open and persistent links.`
     })
 ];
-
-export default mysqliFunctions;

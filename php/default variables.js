@@ -40,5 +40,3 @@ const defaultVariables = [
         type: "variable"
     }
 ]
-
-export default defaultVariables;

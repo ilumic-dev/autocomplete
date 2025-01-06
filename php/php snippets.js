@@ -155,5 +155,3 @@ exit;$\{}`, {
         type: "snippet"
     }),
 ]
-
-export default phpSnippets;

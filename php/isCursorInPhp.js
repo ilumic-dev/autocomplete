@@ -1,4 +1,4 @@
-export function isCursorInPHP(code, cursorPosition) {
+function isCursorInPHP(code, cursorPosition) {
     const line = cursorPosition.line;
     const column = cursorPosition.column;
 

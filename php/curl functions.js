@@ -162,5 +162,3 @@ const curlFunctions = [
         info: `Returns an array with cURL version information, including protocols supported.`
     }),
 ];
-
-export default curlFunctions;

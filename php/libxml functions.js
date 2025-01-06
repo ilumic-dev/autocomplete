@@ -42,5 +42,3 @@ const libxmlFunctions = [
         info: `The libxml_use_internal_errors() function disables the standard libxml errors and enables user error handling.`
     }),
 ];
-
-export default libxmlFunctions;

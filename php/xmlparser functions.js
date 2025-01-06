@@ -147,5 +147,3 @@ However, it is not always possible to transfer a Unicode character to another co
         info: `The xml_set_unparsed_entity_decl_handler() function sets up the unparsed entity declaration handler for the XML parser.`
     }),
 ];
-
-export default xmlParserFunctions;

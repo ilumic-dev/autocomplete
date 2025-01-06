@@ -24,5 +24,3 @@ const jsonFunctions = [
         info: `The json_last_error() function returns the last error occurred.`
     }),
 ];
-
-export default jsonFunctions;

@@ -173,5 +173,3 @@ const variableHandlingFunctions = [
         info: `The var_export() function returns structured information (valid PHP code) about a variable.`
     }),
 ];
-
-export default variableHandlingFunctions;

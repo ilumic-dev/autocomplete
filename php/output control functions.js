@@ -102,5 +102,3 @@ const outputControlFunctions = [
         info: `The output_reset_rewrite_vars() function resets the list of variables that will be rewritten.`
     })
 ];
-
-export default outputControlFunctions;

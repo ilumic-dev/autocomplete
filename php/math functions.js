@@ -294,5 +294,3 @@ const mathFunctions = [
         info: `The tanh() function returns the hyperbolic tangent of a number.`
     }),
 ];
-
-export default mathFunctions;

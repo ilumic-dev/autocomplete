@@ -1298,5 +1298,3 @@ const predefinedConstants = [
         type: "constant"
     },
 ]
-
-export default predefinedConstants;

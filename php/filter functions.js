@@ -53,5 +53,3 @@ This function is useful for retrieving/filtering many values instead of calling 
 This function is useful for filtering many values without calling filter_var() many times.`
     }),
 ];
-
-export default filterFunctions;

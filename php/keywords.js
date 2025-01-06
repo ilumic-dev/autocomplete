@@ -487,5 +487,3 @@ The value given by the <code>yield</code> keyword is used as a value in one of t
 The <code>yield from</code> keyword provides the values from an iterator one by one each time the generator function is called until there are no items left in the iterator, then the generator will move on to the next <code>yield</code> keyword.`
     })
 ]
-
-export default keywords;

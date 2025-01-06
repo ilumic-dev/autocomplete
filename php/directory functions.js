@@ -70,5 +70,3 @@ const directoryFunctions = [
         info: `The scandir() function returns an array of files and directories of the specified directory.`
     })
 ]
-
-export default directoryFunctions;

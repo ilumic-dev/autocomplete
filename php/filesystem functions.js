@@ -740,5 +740,3 @@ umask`
         info: `The unlink() function deletes a file`
     }),
 ];
-
-export default filesystemFunctions;

@@ -183,5 +183,3 @@ This function returns an array with three numbers that represents the average sy
         info: `The usleep() function delays execution of the current script for a specified number of microseconds (a microsecond equals one millionth of a second).`
     })
 ]
-
-export default miscFunctions;
